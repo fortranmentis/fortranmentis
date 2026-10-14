@@ -9,12 +9,12 @@
 </p>
 
 <p align="center">
-  <a href="#english">English</a> ·
-  <a href="#한국어">한국어</a> ·
-  <a href="#selected-projects">Projects</a> ·
-  <a href="#private-work">Private work</a> ·
-  <a href="#in-action">Demos</a> ·
-  <a href="#toolbox">Toolbox</a>
+  <a href="#user-content-english">English</a> ·
+  <a href="#user-content-한국어">한국어</a> ·
+  <a href="#user-content-selected-projects">Projects</a> ·
+  <a href="#user-content-private-work">Private work</a> ·
+  <a href="#user-content-in-action">Demos</a> ·
+  <a href="#user-content-toolbox">Toolbox</a>
 </p>
 
 <p align="center">
@@ -180,7 +180,7 @@ Also on this GitHub: [Korea Toilet Map](https://github.com/fortranmentis/Korea-T
 | 🚢 **[Busan AIS Ship Behavior Analysis](https://github.com/fortranmentis/Busan-AIS-ship-behavior-analysis)** | AIS 궤적·선박 메타데이터·항로 및 정박지 폴리곤을 결합해 정지 상태, 항로 이탈, 활동 후보를 지도 타임랩스로 보여줍니다. 공간 전처리와 병렬 렌더링을 활용하며, **활동 표시는 독립적인 확인이 필요한 규칙 기반 후보**입니다. |
 | 🖥️ **[GPUTERM](https://github.com/fortranmentis/GPUTERM)** | SSH 터미널, SFTP 전송, 시스템·GPU 텔레메트리를 하나의 데스크톱 작업 공간으로 통합합니다. Ollama·vLLM 등 LLM 런타임 모니터링을 제공해 데이터·연산 작업의 서버 운영을 지원합니다. |
 
-[AIS·GPUTERM 화면 보기 ↑](#in-action) · [GPUTERM 다운로드](https://github.com/fortranmentis/GPUTERM/releases) · [전체 저장소](https://github.com/fortranmentis?tab=repositories)
+[AIS·GPUTERM 화면 보기 ↑](#user-content-in-action) · [GPUTERM 다운로드](https://github.com/fortranmentis/GPUTERM/releases) · [전체 저장소](https://github.com/fortranmentis?tab=repositories)
 
 위 AIS 데모는 화면과 규칙 기반 표시의 예시이며, 분류 정확도 검증 결과를 의미하지 않습니다.
 
@@ -222,5 +222,5 @@ Also on this GitHub: [Korea Toilet Map](https://github.com/fortranmentis/Korea-T
 </p>
 
 <p align="center">
-  <a href="#top">Back to top ↑</a> · <a href="#english">English</a> · <a href="#한국어">한국어</a>
+  <a href="#user-content-top">Back to top ↑</a> · <a href="#user-content-english">English</a> · <a href="#user-content-한국어">한국어</a>
 </p>

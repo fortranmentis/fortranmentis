@@ -287,10 +287,10 @@ Also on this GitHub: [Korea Toilet Map](https://github.com/fortranmentis/Korea-T
 
 <p align="center">
   <a href="https://github.com/fortranmentis?tab=repositories"><img src="https://github-stats-extended.vercel.app/api?username=fortranmentis&amp;show_icons=true&amp;hide_rank=true&amp;hide=contribs&amp;custom_title=GitHub+Activity&amp;bg_color=0a172b&amp;title_color=5eead4&amp;text_color=cee0ec&amp;icon_color=38bdf8&amp;border_color=23445c&amp;border_radius=14&amp;disable_animations=true&amp;card_width=440" alt="Public GitHub activity: stars, commits, pull requests, and issues" width="410" /></a>
-  <a href="https://github.com/fortranmentis?tab=repositories"><img src="https://github-stats-extended.vercel.app/api/top-langs/?username=fortranmentis&amp;layout=compact&amp;langs_count=6&amp;exclude_repo=fortranmentis&amp;custom_title=Public+Code+Languages&amp;bg_color=0a172b&amp;title_color=5eead4&amp;text_color=cee0ec&amp;icon_color=38bdf8&amp;border_color=23445c&amp;border_radius=14&amp;disable_animations=true&amp;card_width=440" alt="Language composition of public repository code, excluding the profile repository" width="410" /></a>
+  <a href="assets/language-stats.json"><img src="assets/language-stats.svg" alt="Language composition across owned public and private repositories, weighted by GitHub language bytes" width="410" /></a>
 </p>
 
-<sub>Public repository data only. Language percentages describe code composition, not proficiency. Cards may be cached.<br />공개 저장소 기준입니다. 언어 비율은 코드 구성비이며 숙련도를 뜻하지 않습니다. 통계에는 캐시가 적용될 수 있습니다.</sub>
+<sub>Activity: public repositories. Languages: owned public + private repositories, weighted by GitHub language bytes; profile and forks excluded. The language card is a dated snapshot: top six + Other, not proficiency.<br />활동 통계는 공개 저장소 기준입니다. 언어 비율은 소유한 공개·비공개 저장소의 언어별 바이트를 합산하며 프로필 저장소와 포크는 제외합니다. 언어 카드는 기준일의 상위 6개 언어와 나머지 합계를 보여주는 스냅샷이며, 숙련도를 뜻하지 않습니다.</sub>
 
 ---
 

@@ -14,16 +14,8 @@
   <a href="#user-content-selected-projects">Projects</a> ·
   <a href="#user-content-private-work">Private work</a> ·
   <a href="#user-content-in-action">Demos</a> ·
-  <a href="#user-content-toolbox">Toolbox</a>
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&amp;logo=python&amp;logoColor=white" alt="Python" />
-  <img src="https://img.shields.io/badge/Geospatial_Analytics-087E8B?style=flat-square" alt="Geospatial analytics" />
-  <img src="https://img.shields.io/badge/Data_Quality-0F766E?style=flat-square" alt="Data quality" />
-  <img src="https://img.shields.io/badge/Rust-334155?style=flat-square&amp;logo=rust&amp;logoColor=white" alt="Rust" />
-  <img src="https://img.shields.io/badge/Swift-F05138?style=flat-square&amp;logo=swift&amp;logoColor=white" alt="Swift" />
-  <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&amp;logo=kotlin&amp;logoColor=white" alt="Kotlin" />
+  <a href="#user-content-toolbox">Tech Stack</a> ·
+  <a href="#user-content-github-stats">Stats</a>
 </p>
 
 ---
@@ -43,6 +35,63 @@ I care about the details that make data useful: coordinate systems, temporal cov
 | **Spatial applications** | Indexed local datasets, location/heading-aware search, opening-hours logic, and native iOS/Android experiences |
 | **Developer tooling** | SSH/SFTP workflows, GPU/server telemetry, and LLM runtime monitoring |
 
+<a id="toolbox"></a>
+
+## 🧰 Tech Stack
+
+<sub>Technologies used across my public and private projects · 공개·비공개 프로젝트에서 사용하는 기술</sub>
+
+**Data & Scientific Computing** · 과학 데이터 처리
+
+<p>
+  <img src="assets/badges/python.svg" alt="Python" height="36" />
+  <img src="assets/badges/numpy.svg" alt="NumPy" height="36" />
+  <img src="assets/badges/pandas.svg" alt="pandas" height="36" />
+  <img src="assets/badges/xarray.svg" alt="xarray" height="36" />
+  <img src="assets/badges/netcdf.svg" alt="NetCDF" height="36" />
+</p>
+
+**Geospatial & Visualization** · 공간정보·시각화
+
+<p>
+  <img src="assets/badges/geopandas.svg" alt="GeoPandas" height="36" />
+  <img src="assets/badges/shapely.svg" alt="Shapely" height="36" />
+  <img src="assets/badges/rasterio.svg" alt="Rasterio" height="36" />
+  <img src="assets/badges/geoserver.svg" alt="GeoServer" height="36" />
+  <img src="assets/badges/matplotlib.svg" alt="Matplotlib" height="36" />
+  <img src="assets/badges/ffmpeg.svg" alt="FFmpeg" height="36" />
+</p>
+
+**Database** · 데이터베이스
+
+<p>
+  <img src="assets/badges/postgresql.svg" alt="PostgreSQL" height="36" />
+  <img src="assets/badges/sqlite.svg" alt="SQLite / R-Tree" height="36" />
+  <img src="assets/badges/sqlcipher.svg" alt="SQLCipher" height="36" />
+</p>
+
+**Native & Systems** · 네이티브·시스템
+
+<p>
+  <img src="assets/badges/rust.svg" alt="Rust" height="36" />
+  <img src="assets/badges/swift.svg" alt="Swift" height="36" />
+  <img src="assets/badges/kotlin.svg" alt="Kotlin" height="36" />
+  <img src="assets/badges/tauri.svg" alt="Tauri" height="36" />
+</p>
+
+**UI & Applications** · UI·애플리케이션
+
+<p>
+  <img src="assets/badges/swiftui.svg" alt="SwiftUI" height="36" />
+  <img src="assets/badges/compose.svg" alt="Jetpack Compose" height="36" />
+  <img src="assets/badges/react.svg" alt="React" height="36" />
+  <img src="assets/badges/typescript.svg" alt="TypeScript" height="36" />
+</p>
+
+<sub>Also used · 함께 사용하는 기술: pyproj · Bash · Docker · MapKit · Google Maps · ML Kit · UniFFI · JNI</sub>
+
+---
+
 <a id="selected-projects"></a>
 
 ## Selected projects
@@ -53,7 +102,13 @@ I care about the details that make data useful: coordinate systems, temporal cov
 
 Validates incoming NetCDF/CSV files against supplied specifications, regrids and reprojects raster products, derives current speed/direction from U/V components, updates PostgreSQL, and publishes selected GeoServer layers. Field-level reports retain the basis for acceptance decisions.
 
-`Python` `xarray` `Rasterio` `NetCDF` `GeoTIFF` `PostgreSQL` `GeoServer` `Bash`
+<p>
+  <img src="assets/badges/python.svg" alt="Python" height="28" />
+  <img src="assets/badges/xarray.svg" alt="xarray" height="28" />
+  <img src="assets/badges/rasterio.svg" alt="Rasterio" height="28" />
+  <img src="assets/badges/postgresql.svg" alt="PostgreSQL" height="28" />
+  <img src="assets/badges/geoserver.svg" alt="GeoServer" height="28" />
+</p>
 
 ### 📍 [Multi-Model Grid Validator](https://github.com/fortranmentis/multi-model-grid-validator)
 
@@ -61,7 +116,12 @@ Validates incoming NetCDF/CSV files against supplied specifications, regrids and
 
 Handles **15 model configurations** across ocean, wave, and atmospheric datasets. Selects the nearest eligible cell within **40 km**; non-WRF entries screen the first **up to 20 timesteps**, while WRF entries use coordinate-based matching. Parallel processing combines results into a location-level CSV.
 
-`Python` `NumPy` `pandas` `netCDF4` `Multiprocessing` `Haversine distance`
+<p>
+  <img src="assets/badges/python.svg" alt="Python" height="28" />
+  <img src="assets/badges/numpy.svg" alt="NumPy" height="28" />
+  <img src="assets/badges/pandas.svg" alt="pandas" height="28" />
+  <img src="assets/badges/netcdf.svg" alt="NetCDF" height="28" />
+</p>
 
 ### 🚢 [Busan AIS Ship Behavior Analysis](https://github.com/fortranmentis/Busan-AIS-ship-behavior-analysis)
 
@@ -69,7 +129,13 @@ Handles **15 model configurations** across ocean, wave, and atmospheric datasets
 
 Combines AIS trajectories, vessel metadata, and fairway/anchorage polygons to visualize stationary states, fairway exits, and candidate activities. Spatial preprocessing and parallel rendering produce satellite-map time-lapse videos. **Activity labels are heuristic candidates** that require independent confirmation.
 
-`Python` `GeoPandas` `Shapely` `Matplotlib` `SciPy` `FFmpeg`
+<p>
+  <img src="assets/badges/python.svg" alt="Python" height="28" />
+  <img src="assets/badges/geopandas.svg" alt="GeoPandas" height="28" />
+  <img src="assets/badges/shapely.svg" alt="Shapely" height="28" />
+  <img src="assets/badges/matplotlib.svg" alt="Matplotlib" height="28" />
+  <img src="assets/badges/ffmpeg.svg" alt="FFmpeg" height="28" />
+</p>
 
 ### 🖥️ [GPUTERM](https://github.com/fortranmentis/GPUTERM)
 
@@ -77,7 +143,12 @@ Combines AIS trajectories, vessel metadata, and fairway/anchorage polygons to vi
 
 Combines an SSH terminal, SFTP transfers, and live system/GPU telemetry. Includes monitoring adapters for Ollama, vLLM, and other LLM runtimes, supporting the infrastructure side of data and compute workflows.
 
-`Rust` `Tauri` `React` `TypeScript` `SSH` `SFTP`
+<p>
+  <img src="assets/badges/rust.svg" alt="Rust" height="28" />
+  <img src="assets/badges/tauri.svg" alt="Tauri" height="28" />
+  <img src="assets/badges/react.svg" alt="React" height="28" />
+  <img src="assets/badges/typescript.svg" alt="TypeScript" height="28" />
+</p>
 
 [Download GPUTERM](https://github.com/fortranmentis/GPUTERM/releases) · [Browse all repositories](https://github.com/fortranmentis?tab=repositories)
 
@@ -93,7 +164,12 @@ Alongside the public projects, I develop the following tools in private reposito
 
 Native SSH/SFTP clients with system/GPU telemetry and LLM runtime monitoring. The iOS app connects **SwiftUI to Rust through UniFFI**; the Android app connects **Kotlin/Jetpack Compose to Rust through JNI**. The work includes terminal interaction, file transfers, adaptive layouts, and platform-specific credential handling.
 
-`SwiftUI` `Kotlin` `Jetpack Compose` `Rust` `UniFFI` `JNI`
+<p>
+  <img src="assets/badges/swiftui.svg" alt="SwiftUI" height="28" />
+  <img src="assets/badges/kotlin.svg" alt="Kotlin" height="28" />
+  <img src="assets/badges/compose.svg" alt="Jetpack Compose" height="28" />
+  <img src="assets/badges/rust.svg" alt="Rust" height="28" />
+</p>
 
 ### 🗺️ HelpPoopy / Korea Toilet Map
 
@@ -101,7 +177,13 @@ Native SSH/SFTP clients with system/GPU telemetry and LLM runtime monitoring. Th
 
 Native iOS and Android restroom-finding apps with pedestrian discovery, direction-aware driving recommendations, operating-hours filters, and navigation handoff. A build-time Python workflow prepares **SQLCipher-backed SQLite data with R-Tree spatial indexes**, enabling viewport queries and local filtering. The apps also provide localized interfaces and on-device text translation.
 
-`SwiftUI` `MapKit` `Jetpack Compose` `Google Maps` `Python` `SQLite / R-Tree` `SQLCipher` `ML Kit`
+<p>
+  <img src="assets/badges/swiftui.svg" alt="SwiftUI" height="28" />
+  <img src="assets/badges/compose.svg" alt="Jetpack Compose" height="28" />
+  <img src="assets/badges/python.svg" alt="Python" height="28" />
+  <img src="assets/badges/sqlite.svg" alt="SQLite / R-Tree" height="28" />
+  <img src="assets/badges/sqlcipher.svg" alt="SQLCipher" height="28" />
+</p>
 
 [Public support & privacy site →](https://fortranmentis.github.io/Korea-Toilet-Map/)
 
@@ -111,7 +193,10 @@ Native iOS and Android restroom-finding apps with pedestrian discovery, directio
 
 Python/pandas scripts consolidate spreadsheets, compare forecast-index outputs, aggregate regional differences, and summarize weather-event days and proportions. CSV, Excel, and styled HTML exports make the resulting tables easier to review. These are task-specific scripts rather than a packaged analytics platform.
 
-`Python` `pandas` `Excel` `CSV` `HTML reports`
+<p>
+  <img src="assets/badges/python.svg" alt="Python" height="28" />
+  <img src="assets/badges/pandas.svg" alt="pandas" height="28" />
+</p>
 
 <a id="in-action"></a>
 
@@ -129,21 +214,6 @@ Python/pandas scripts consolidate spreadsheets, compare forecast-index outputs, 
 </table>
 
 *Repository demo assets. The AIS animation illustrates the interface and heuristic overlays; it is not an accuracy benchmark.*
-
-<a id="toolbox"></a>
-
-## Toolbox
-
-Technologies used across the public and private work above:
-
-| Area | Technologies |
-| :--- | :--- |
-| **Scientific computing** | Python · NumPy · pandas · xarray · netCDF4 |
-| **Spatial data & visualization** | GeoPandas · Shapely · Rasterio · pyproj · Matplotlib · FFmpeg |
-| **Spatial apps & local data** | SwiftUI · MapKit · Kotlin · Jetpack Compose · Google Maps · SQLite/R-Tree · SQLCipher · ML Kit |
-| **Data delivery & automation** | PostgreSQL · GeoServer · Bash · Docker |
-| **Desktop & systems** | Rust · Tauri · React · TypeScript · SSH/SFTP |
-| **Native interoperability** | UniFFI · JNI |
 
 ## How I approach data work
 
@@ -196,14 +266,9 @@ Also on this GitHub: [Korea Toilet Map](https://github.com/fortranmentis/Korea-T
 
 ### 사용하는 기술
 
-| 영역 | 기술 |
-| :--- | :--- |
-| **과학 데이터 처리** | Python · NumPy · pandas · xarray · netCDF4 |
-| **공간정보·시각화** | GeoPandas · Shapely · Rasterio · pyproj · Matplotlib · FFmpeg |
-| **위치 기반 앱·로컬 데이터** | SwiftUI · MapKit · Kotlin · Jetpack Compose · Google Maps · SQLite/R-Tree · SQLCipher · ML Kit |
-| **데이터 전달·자동화** | PostgreSQL · GeoServer · Bash · Docker |
-| **데스크톱·시스템** | Rust · Tauri · React · TypeScript · SSH/SFTP |
-| **네이티브 연동** | UniFFI · JNI |
+[공통 Tech Stack에서 분야별 기술 배지 보기 ↑](#user-content-toolbox)
+
+과학 데이터 처리, 공간정보·시각화, 데이터베이스, 네이티브·시스템, UI·애플리케이션으로 나누어 소개했습니다.
 
 ### 데이터를 다루는 원칙
 
@@ -213,6 +278,19 @@ Also on this GitHub: [Korea Toilet Map](https://github.com/fortranmentis/Korea-T
 - **운영 맥락을 문서화합니다.** 설정·의존성·검증 근거·복구 절차를 코드와 함께 관리합니다.
 
 추가 프로젝트: iOS 앱의 한·영 **지원 및 개인정보 처리방침 웹사이트**인 [Korea Toilet Map](https://github.com/fortranmentis/Korea-Toilet-Map)도 운영합니다. [사이트 방문 →](https://fortranmentis.github.io/Korea-Toilet-Map/)
+
+---
+
+<a id="github-stats"></a>
+
+## 📊 GitHub Stats
+
+<p align="center">
+  <a href="https://github.com/fortranmentis?tab=repositories"><img src="https://github-stats-extended.vercel.app/api?username=fortranmentis&amp;show_icons=true&amp;hide_rank=true&amp;hide=contribs&amp;custom_title=GitHub+Activity&amp;bg_color=0a172b&amp;title_color=5eead4&amp;text_color=cee0ec&amp;icon_color=38bdf8&amp;border_color=23445c&amp;border_radius=14&amp;disable_animations=true&amp;card_width=440" alt="Public GitHub activity: stars, commits, pull requests, and issues" width="410" /></a>
+  <a href="https://github.com/fortranmentis?tab=repositories"><img src="https://github-stats-extended.vercel.app/api/top-langs/?username=fortranmentis&amp;layout=compact&amp;langs_count=6&amp;exclude_repo=fortranmentis&amp;custom_title=Public+Code+Languages&amp;bg_color=0a172b&amp;title_color=5eead4&amp;text_color=cee0ec&amp;icon_color=38bdf8&amp;border_color=23445c&amp;border_radius=14&amp;disable_animations=true&amp;card_width=440" alt="Language composition of public repository code, excluding the profile repository" width="410" /></a>
+</p>
+
+<sub>Public repository data only. Language percentages describe code composition, not proficiency. Cards may be cached.<br />공개 저장소 기준입니다. 언어 비율은 코드 구성비이며 숙련도를 뜻하지 않습니다. 통계에는 캐시가 적용될 수 있습니다.</sub>
 
 ---
 

@@ -1,33 +1,33 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="440" height="170" viewBox="0 0 440 170" role="img" aria-labelledby="title desc">
 <title id="title">Code language composition: public and private repositories</title>
-<desc id="desc">Snapshot 2026-10-15. Owned, non-fork repositories; profile repository excluded. GitHub language byte counts. Rust: 36.8826%; Python: 12.9662%; Kotlin: 12.6150%; Swift: 10.4256%; JavaScript: 8.7533%; TypeScript: 8.2468%; Fortran: 5.7340%; Visual Basic 6.0: 1.9073%; CSS: 1.0281%; Shell: 0.4431%; MATLAB: 0.2900%; GLSL: 0.2188%; HTML: 0.2131%; PowerShell: 0.2040%; C: 0.0405%; Ruby: 0.0190%; Dockerfile: 0.0070%; Gosu: 0.0032%; Java: 0.0021%. Other combines languages outside the top six.</desc>
+<desc id="desc">Snapshot 2026-10-15. Owned, non-fork repositories; profile repository excluded. GitHub language byte counts. Rust: 36.4967%; Python: 13.7372%; Kotlin: 12.4830%; Swift: 10.3165%; JavaScript: 8.7254%; TypeScript: 8.1606%; Fortran: 5.6740%; Visual Basic 6.0: 1.8874%; CSS: 1.0174%; Shell: 0.4385%; MATLAB: 0.2870%; HTML: 0.2831%; GLSL: 0.2165%; PowerShell: 0.2056%; C: 0.0401%; Ruby: 0.0188%; Dockerfile: 0.0069%; Gosu: 0.0032%; Java: 0.0021%. Other combines languages outside the top six.</desc>
 <rect x=".5" y=".5" width="439" height="169" rx="14" fill="#0A172B" stroke="#23445C"/>
 <g font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif">
 <text x="25" y="29" fill="#5EEAD4" font-size="18" font-weight="600">Code Languages</text>
 <text x="25" y="47" fill="#9DB6CB" font-size="11">Public + private · 2026-10-15</text>
 <defs><clipPath id="bar"><rect x="25" y="59" width="390" height="8" rx="4"/></clipPath></defs>
 <g clip-path="url(#bar)">
-<rect x="25.000000" y="59" width="143.842102" height="8" fill="#DEA584"/>
-<rect x="168.842102" y="59" width="50.568329" height="8" fill="#F4D35E"/>
-<rect x="219.410432" y="59" width="49.198561" height="8" fill="#A97BFF"/>
-<rect x="268.608993" y="59" width="40.659878" height="8" fill="#F59076"/>
-<rect x="309.268871" y="59" width="34.137909" height="8" fill="#F1E05A"/>
-<rect x="343.406780" y="59" width="32.162686" height="8" fill="#64A6ED"/>
-<rect x="375.569466" y="59" width="39.430534" height="8" fill="#8DAAC4"/>
+<rect x="25.000000" y="59" width="142.337266" height="8" fill="#DEA584"/>
+<rect x="167.337266" y="59" width="53.575107" height="8" fill="#F4D35E"/>
+<rect x="220.912373" y="59" width="48.683859" height="8" fill="#A97BFF"/>
+<rect x="269.596232" y="59" width="40.234506" height="8" fill="#F59076"/>
+<rect x="309.830738" y="59" width="34.029006" height="8" fill="#F1E05A"/>
+<rect x="343.859745" y="59" width="31.826209" height="8" fill="#64A6ED"/>
+<rect x="375.685954" y="59" width="39.314046" height="8" fill="#8DAAC4"/>
 </g>
 <circle cx="30" cy="88" r="4.5" fill="#DEA584"/>
-<text x="42" y="92" fill="#CEE0EC" font-size="12">Rust 36.88%</text>
+<text x="42" y="92" fill="#CEE0EC" font-size="12">Rust 36.50%</text>
 <circle cx="230" cy="88" r="4.5" fill="#F4D35E"/>
-<text x="242" y="92" fill="#CEE0EC" font-size="12">Python 12.97%</text>
+<text x="242" y="92" fill="#CEE0EC" font-size="12">Python 13.74%</text>
 <circle cx="30" cy="108" r="4.5" fill="#A97BFF"/>
-<text x="42" y="112" fill="#CEE0EC" font-size="12">Kotlin 12.62%</text>
+<text x="42" y="112" fill="#CEE0EC" font-size="12">Kotlin 12.48%</text>
 <circle cx="230" cy="108" r="4.5" fill="#F59076"/>
-<text x="242" y="112" fill="#CEE0EC" font-size="12">Swift 10.43%</text>
+<text x="242" y="112" fill="#CEE0EC" font-size="12">Swift 10.32%</text>
 <circle cx="30" cy="128" r="4.5" fill="#F1E05A"/>
-<text x="42" y="132" fill="#CEE0EC" font-size="12">JavaScript 8.75%</text>
+<text x="42" y="132" fill="#CEE0EC" font-size="12">JavaScript 8.73%</text>
 <circle cx="230" cy="128" r="4.5" fill="#64A6ED"/>
-<text x="242" y="132" fill="#CEE0EC" font-size="12">TypeScript 8.25%</text>
+<text x="242" y="132" fill="#CEE0EC" font-size="12">TypeScript 8.16%</text>
 <circle cx="30" cy="148" r="4.5" fill="#8DAAC4"/>
-<text x="42" y="152" fill="#CEE0EC" font-size="12">Other 10.11%</text>
+<text x="42" y="152" fill="#CEE0EC" font-size="12">Other 10.08%</text>
 </g>
 </svg>

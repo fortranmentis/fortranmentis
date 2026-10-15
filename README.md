@@ -24,7 +24,7 @@
 
 ## Hi, I'm fortranmentis 👋
 
-I build data workflows, spatial applications, and developer tools, with a focus on **climate variability, ocean and atmospheric datasets, and geospatial analysis**. My work spans climate-data statistics, scientific file processing, analytical reporting, indexed location search, and native mobile interfaces for data and server workflows.
+I build data workflows, spatial applications, and developer tools, with a focus on **climate variability, ocean and atmospheric datasets, and geospatial analysis**. My work spans climate-data statistics, scientific file processing, analytical reporting, tool-calling AI agents, indexed location search, and native mobile interfaces for data and server workflows.
 
 I care about the details that make data useful: coordinate systems, temporal coverage, missing values, explicit acceptance rules, and a clear distinction between what a result shows and what still needs validation.
 
@@ -34,6 +34,7 @@ I care about the details that make data useful: coordinate systems, temporal cov
 | **Data engineering** | Specification checks, NetCDF/CSV processing, raster conversion, and database/service integration |
 | **Geospatial analytics** | Numerical-model grid matching, vessel trajectories, spatial joins, and map-based visualization |
 | **Forecast diagnostics** | Paired-product comparisons, model/warning difference summaries, and event-day reporting |
+| **AI agents** | Typed tool calling, public-data integration, rule-based itinerary drafts, and inspectable source evidence |
 | **Spatial applications** | Indexed local datasets, location/heading-aware search, opening-hours logic, and native iOS/Android experiences |
 | **Developer tooling** | SSH/SFTP workflows, GPU/server telemetry, and LLM runtime monitoring |
 
@@ -66,6 +67,13 @@ I care about the details that make data useful: coordinate systems, temporal cov
   <img src="assets/badges/matplotlib.svg" alt="Matplotlib" height="36" />
 </p>
 
+**AI Agents & APIs** · AI 에이전트·API
+
+<p>
+  <img src="assets/badges/ollama.svg" alt="Ollama" height="36" />
+  <img src="assets/badges/fastapi.svg" alt="FastAPI" height="36" />
+</p>
+
 **Database** · 데이터베이스
 
 <p>
@@ -92,13 +100,29 @@ I care about the details that make data useful: coordinate systems, temporal cov
   <img src="assets/badges/typescript.svg" alt="TypeScript" height="36" />
 </p>
 
-<sub>Also used · 함께 사용하는 기술: pyproj · FFmpeg · Bash · Docker · MapKit · Google Maps · ML Kit · UniFFI · JNI</sub>
+<sub>Also used · 함께 사용하는 기술: pyproj · FFmpeg · Bash · Docker · MapKit · Google Maps · ML Kit · UniFFI · JNI · Pydantic · OSRM · Leaflet</sub>
 
 ---
 
 <a id="selected-projects"></a>
 
 ## Selected projects
+
+<a id="marine-travel-ai-agent"></a>
+
+### 🧭 [Marine Travel AI Agent · 바다결](https://github.com/fortranmentis/marine-travel-AI-agent)
+
+**Turn public coastal data into a travel draft whose inputs and decisions can be inspected.**
+
+A local prototype for one- to three-day family car trips across Yeongjong–Yongyu, Ganghwa, and Songdo–urban Incheon. Combines TourAPI tourism records, eight marine forecast feeds, and KMA weather through **five typed, allowlisted Ollama tools** and a Python itinerary engine. Pagination checks, atomic catalog updates, and freshness gates support traceable data use; the Korean web interface exposes source timestamps, OSRM road routes, and visit replacement/undo.
+
+**Only mudflat experiences are automatically scheduled as marine activities.** Itineraries remain provisional: operator availability, age limits, warning bulletins, and on-site access require separate checks. The [validation record](https://github.com/fortranmentis/marine-travel-AI-agent/blob/main/VALIDATION.md) reports offline regression coverage; it does not establish live-provider availability, model reliability, or travel safety.
+
+<p>
+  <img src="assets/badges/python.svg" alt="Python" height="28" />
+  <img src="assets/badges/fastapi.svg" alt="FastAPI" height="28" />
+  <img src="assets/badges/ollama.svg" alt="Ollama" height="28" />
+</p>
 
 <a id="climate-variability-analysis"></a>
 
@@ -255,7 +279,7 @@ Also on this GitHub: [Korea Toilet Map](https://github.com/fortranmentis/Korea-T
 
 ## 안녕하세요, fortranmentis입니다 👋
 
-**기후 변동성, 해양·대기 데이터, 공간정보 분석**을 중심으로 데이터 워크플로, 위치 기반 앱, 개발 도구를 만듭니다. 기후자료 통계, 과학 데이터 처리와 분석 보고서부터 공간 인덱스를 활용한 위치 검색, 데이터·서버 작업을 위한 네이티브 모바일 UI까지 연결합니다.
+**기후 변동성, 해양·대기 데이터, 공간정보 분석**을 중심으로 데이터 워크플로, 위치 기반 앱, 개발 도구를 만듭니다. 기후자료 통계, 과학 데이터 처리와 분석 보고서, 도구 호출 기반 AI 에이전트부터 공간 인덱스를 활용한 위치 검색, 데이터·서버 작업을 위한 네이티브 모바일 UI까지 연결합니다.
 
 좌표계, 시간 범위, 결측값, 명시적인 통과 조건처럼 데이터 활용의 신뢰도를 좌우하는 세부사항을 중요하게 생각합니다. 결과가 보여주는 내용과 추가 검증이 필요한 범위를 구분해 설명하는 것을 지향합니다.
 
@@ -265,6 +289,7 @@ Also on this GitHub: [Korea Toilet Map](https://github.com/fortranmentis/Korea-T
 | **데이터 엔지니어링** | 규격 검증, NetCDF·CSV 처리, 래스터 변환, 데이터베이스·공간 서비스 연계 |
 | **공간 데이터 분석** | 수치모델 격자 매칭, 선박 궤적 분석, 공간 조인, 지도 기반 시각화 |
 | **예보 변경 분석** | 서비스·예측 자료 비교, 모델 요소·특보 차이 요약, 특이사항 발생일 보고 |
+| **AI 에이전트** | 타입이 정의된 도구 호출, 공공데이터 연계, 규칙 기반 일정 초안, 출처·판정 근거 확인 |
 | **위치 기반 앱** | 공간 인덱스가 있는 로컬 데이터, 위치·방향 기반 검색, 운영시간 판정, iOS·Android 네이티브 UI |
 | **개발·운영 도구** | SSH·SFTP 작업 환경, GPU·서버 텔레메트리, LLM 런타임 모니터링 |
 
@@ -272,6 +297,7 @@ Also on this GitHub: [Korea Toilet Map](https://github.com/fortranmentis/Korea-T
 
 | 프로젝트 | 해결하는 문제와 구현 내용 |
 | :--- | :--- |
+| 🧭 **[Marine Travel AI Agent · 바다결](https://github.com/fortranmentis/marine-travel-AI-agent)** | 영종·용유, 강화, 송도·인천 도심의 1~3일 가족 차량 여행 초안을 만드는 로컬 프로토타입입니다. TourAPI 관광정보·8개 해양예보·기상청 예보를 **허용된 5개 Ollama 도구와 Python 일정 규칙**으로 연결합니다. 페이지 수집·원자적 갱신·신선도 점검과 출처 시각·OSRM 도로 경로·방문지 교체·되돌리기를 제공합니다. 해양활동 자동 배치는 **갯벌체험에 한정**하며 운영·연령·특보·현장 접근 조건은 별도 확인이 필요합니다. [오프라인 검증 기록](https://github.com/fortranmentis/marine-travel-AI-agent/blob/main/VALIDATION.md)은 실제 API 가용성·모델 신뢰성·여행 안전성을 입증하지 않습니다. |
 | 🌏 **[Climate Variability Analysis](https://github.com/fortranmentis/climate-variability-analysis_Jeonbuk-National-University)** | 전주 강설·적설과 해수면 온도·대기 순환·해빙의 통계적 관계를 다루는 전북대학교 관련 연구·수업 자료 아카이브입니다. Fortran·GrADS·MATLAB으로 회귀·합성·EOF·필터링·스펙트럼 분석을 다룹니다. 단일 회귀 예제의 실행 기록은 있으나 전체 분석과 그림·과학적 결론의 재현은 [추가 검증이 필요합니다](https://github.com/fortranmentis/climate-variability-analysis_Jeonbuk-National-University/blob/main/VALIDATION.md). |
 | 🌊 **[Ocean Forecast GeoPipeline](https://github.com/fortranmentis/ocean-forecast-geopipeline)** | 반복적으로 제공되는 해양·해빙 산출물을 공간 서비스로 연결합니다. NetCDF·CSV 규격 비교, 재격자화·재투영, U/V 기반 유속·방향 산출, PostgreSQL 갱신, 지정된 GeoServer 레이어 발행을 수행하며 항목별 판정 근거를 보고서에 남깁니다. |
 | 📍 **[Multi-Model Grid Validator](https://github.com/fortranmentis/multi-model-grid-validator)** | 지점별로 값 점검 조건을 충족하는 최근접 모델 격자를 찾습니다. 해양·파랑·대기 **15개 설정**, **반경 40 km**를 지원합니다. 비 WRF 모델은 최초 **최대 20개 시점**의 값을 점검하고, WRF는 좌표로 매칭합니다. 모델별 병렬 처리 결과를 CSV로 통합합니다. |
@@ -296,7 +322,7 @@ Also on this GitHub: [Korea Toilet Map](https://github.com/fortranmentis/Korea-T
 
 [공통 Tech Stack에서 분야별 기술 배지 보기 ↑](#user-content-toolbox)
 
-과학 데이터 처리, 공간정보·시각화, 데이터베이스, 네이티브·시스템, UI·애플리케이션으로 나누어 소개했습니다.
+과학 데이터 처리, 공간정보·시각화, AI 에이전트·API, 데이터베이스, 네이티브·시스템, UI·애플리케이션으로 나누어 소개했습니다.
 
 ### 데이터를 다루는 원칙
 

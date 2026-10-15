@@ -24,12 +24,13 @@
 
 ## Hi, I'm fortranmentis 👋
 
-I build data workflows, spatial applications, and developer tools, with a focus on **ocean and atmospheric datasets, geospatial processing, and explainable analysis**. My work spans scientific file processing, analytical reporting, indexed location search, and native mobile interfaces for data and server workflows.
+I build data workflows, spatial applications, and developer tools, with a focus on **climate variability, ocean and atmospheric datasets, and geospatial analysis**. My work spans climate-data statistics, scientific file processing, analytical reporting, indexed location search, and native mobile interfaces for data and server workflows.
 
 I care about the details that make data useful: coordinate systems, temporal coverage, missing values, explicit acceptance rules, and a clear distinction between what a result shows and what still needs validation.
 
 | Focus | What I build |
 | :--- | :--- |
+| **Climate research** | Snow–ocean–atmosphere relationships, regression/composites, EOF analysis, and time-series methods |
 | **Data engineering** | Specification checks, NetCDF/CSV processing, raster conversion, and database/service integration |
 | **Geospatial analytics** | Numerical-model grid matching, vessel trajectories, spatial joins, and map-based visualization |
 | **Forecast diagnostics** | Paired-product comparisons, model/warning difference summaries, and event-day reporting |
@@ -45,6 +46,8 @@ I care about the details that make data useful: coordinate systems, temporal cov
 **Data & Scientific Computing** · 과학 데이터 처리
 
 <p>
+  <img src="assets/badges/fortran.svg" alt="Fortran" height="36" />
+  <img src="assets/badges/matlab.svg" alt="MATLAB" height="36" />
   <img src="assets/badges/python.svg" alt="Python" height="36" />
   <img src="assets/badges/numpy.svg" alt="NumPy" height="36" />
   <img src="assets/badges/pandas.svg" alt="pandas" height="36" />
@@ -55,12 +58,12 @@ I care about the details that make data useful: coordinate systems, temporal cov
 **Geospatial & Visualization** · 공간정보·시각화
 
 <p>
+  <img src="assets/badges/grads.svg" alt="GrADS" height="36" />
   <img src="assets/badges/geopandas.svg" alt="GeoPandas" height="36" />
   <img src="assets/badges/shapely.svg" alt="Shapely" height="36" />
   <img src="assets/badges/rasterio.svg" alt="Rasterio" height="36" />
   <img src="assets/badges/geoserver.svg" alt="GeoServer" height="36" />
   <img src="assets/badges/matplotlib.svg" alt="Matplotlib" height="36" />
-  <img src="assets/badges/ffmpeg.svg" alt="FFmpeg" height="36" />
 </p>
 
 **Database** · 데이터베이스
@@ -89,13 +92,29 @@ I care about the details that make data useful: coordinate systems, temporal cov
   <img src="assets/badges/typescript.svg" alt="TypeScript" height="36" />
 </p>
 
-<sub>Also used · 함께 사용하는 기술: pyproj · Bash · Docker · MapKit · Google Maps · ML Kit · UniFFI · JNI</sub>
+<sub>Also used · 함께 사용하는 기술: pyproj · FFmpeg · Bash · Docker · MapKit · Google Maps · ML Kit · UniFFI · JNI</sub>
 
 ---
 
 <a id="selected-projects"></a>
 
 ## Selected projects
+
+<a id="climate-variability-analysis"></a>
+
+### 🌏 [Climate Variability Analysis](https://github.com/fortranmentis/climate-variability-analysis_Jeonbuk-National-University)
+
+**Explore statistical relationships across snow, ocean, and atmosphere.**
+
+A research and coursework archive associated with Jeonbuk National University, examining Jeonju snowfall/snow depth alongside sea surface temperature, atmospheric circulation, and sea ice. Fortran programs, GrADS scripts, and MATLAB routines cover regression, composites, EOF analysis, filtering, and spectral methods.
+
+The [validation record](https://github.com/fortranmentis/climate-variability-analysis_Jeonbuk-National-University/blob/main/VALIDATION.md) documents a limited regression execution check. Full scientific replication, GrADS figure regeneration, and MATLAB execution remain unverified.
+
+<p>
+  <img src="assets/badges/fortran.svg" alt="Fortran" height="28" />
+  <img src="assets/badges/grads.svg" alt="GrADS" height="28" />
+  <img src="assets/badges/matlab.svg" alt="MATLAB" height="28" />
+</p>
 
 ### 🌊 [Ocean Forecast GeoPipeline](https://github.com/fortranmentis/ocean-forecast-geopipeline)
 
@@ -236,12 +255,13 @@ Also on this GitHub: [Korea Toilet Map](https://github.com/fortranmentis/Korea-T
 
 ## 안녕하세요, fortranmentis입니다 👋
 
-**해양·대기 데이터, 공간정보 처리, 설명 가능한 분석**을 중심으로 데이터 워크플로, 위치 기반 앱, 개발 도구를 만듭니다. 과학 데이터 처리와 분석 보고서부터 공간 인덱스를 활용한 위치 검색, 데이터·서버 작업을 위한 네이티브 모바일 UI까지 연결합니다.
+**기후 변동성, 해양·대기 데이터, 공간정보 분석**을 중심으로 데이터 워크플로, 위치 기반 앱, 개발 도구를 만듭니다. 기후자료 통계, 과학 데이터 처리와 분석 보고서부터 공간 인덱스를 활용한 위치 검색, 데이터·서버 작업을 위한 네이티브 모바일 UI까지 연결합니다.
 
 좌표계, 시간 범위, 결측값, 명시적인 통과 조건처럼 데이터 활용의 신뢰도를 좌우하는 세부사항을 중요하게 생각합니다. 결과가 보여주는 내용과 추가 검증이 필요한 범위를 구분해 설명하는 것을 지향합니다.
 
 | 관심 분야 | 구현하는 것 |
 | :--- | :--- |
+| **기후 연구** | 강설·해양·대기 관계, 회귀·합성 분석, EOF 공간 모드, 시계열 분석 |
 | **데이터 엔지니어링** | 규격 검증, NetCDF·CSV 처리, 래스터 변환, 데이터베이스·공간 서비스 연계 |
 | **공간 데이터 분석** | 수치모델 격자 매칭, 선박 궤적 분석, 공간 조인, 지도 기반 시각화 |
 | **예보 변경 분석** | 서비스·예측 자료 비교, 모델 요소·특보 차이 요약, 특이사항 발생일 보고 |
@@ -252,6 +272,7 @@ Also on this GitHub: [Korea Toilet Map](https://github.com/fortranmentis/Korea-T
 
 | 프로젝트 | 해결하는 문제와 구현 내용 |
 | :--- | :--- |
+| 🌏 **[Climate Variability Analysis](https://github.com/fortranmentis/climate-variability-analysis_Jeonbuk-National-University)** | 전주 강설·적설과 해수면 온도·대기 순환·해빙의 통계적 관계를 다루는 전북대학교 관련 연구·수업 자료 아카이브입니다. Fortran·GrADS·MATLAB으로 회귀·합성·EOF·필터링·스펙트럼 분석을 다룹니다. 단일 회귀 예제의 실행 기록은 있으나 전체 분석과 그림·과학적 결론의 재현은 [추가 검증이 필요합니다](https://github.com/fortranmentis/climate-variability-analysis_Jeonbuk-National-University/blob/main/VALIDATION.md). |
 | 🌊 **[Ocean Forecast GeoPipeline](https://github.com/fortranmentis/ocean-forecast-geopipeline)** | 반복적으로 제공되는 해양·해빙 산출물을 공간 서비스로 연결합니다. NetCDF·CSV 규격 비교, 재격자화·재투영, U/V 기반 유속·방향 산출, PostgreSQL 갱신, 지정된 GeoServer 레이어 발행을 수행하며 항목별 판정 근거를 보고서에 남깁니다. |
 | 📍 **[Multi-Model Grid Validator](https://github.com/fortranmentis/multi-model-grid-validator)** | 지점별로 값 점검 조건을 충족하는 최근접 모델 격자를 찾습니다. 해양·파랑·대기 **15개 설정**, **반경 40 km**를 지원합니다. 비 WRF 모델은 최초 **최대 20개 시점**의 값을 점검하고, WRF는 좌표로 매칭합니다. 모델별 병렬 처리 결과를 CSV로 통합합니다. |
 | 📊 **[Marine Forecast Index Stats](https://github.com/fortranmentis/marine-forecast-index-stats)** | Python·pandas로 생활해양예보지수의 서비스·예측 자료를 비교하고 지수 변경, 모델 요소·기상특보 차이, 특이사항 발생일과 중복 조건을 집계합니다. 권역·항로·선박별 요약 및 Excel·CSV·HTML 출력 코드를 포함하며, 관측 대비 예보 정확도를 평가하는 도구는 아닙니다. 기존 실행 환경의 호환성과 산출값 대사는 [추가 검증이 필요합니다](https://github.com/fortranmentis/marine-forecast-index-stats/blob/master/VALIDATION.md). |

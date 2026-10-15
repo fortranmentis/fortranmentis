@@ -1,7 +1,7 @@
 <a id="top"></a>
 
 <p align="center">
-  <img src="assets/profile-header.svg" alt="fortranmentis — Data engineering and geospatial analytics. Scientific data. Clear rules. Useful tools." width="100%" />
+  <img src="assets/profile-header.svg" alt="fortranmentis — Scientific data, AI agents and spatial tools. Climate and ocean analysis, data engineering, native apps and developer tools." width="100%" />
 </p>
 
 <p align="center">

@@ -100,7 +100,22 @@ I care about the details that make data useful: coordinate systems, temporal cov
   <img src="assets/badges/typescript.svg" alt="TypeScript" height="36" />
 </p>
 
-<sub>Also used · 함께 사용하는 기술: pyproj · FFmpeg · Bash · Docker · MapKit · Google Maps · ML Kit · UniFFI · JNI · Pydantic · OSRM · Leaflet</sub>
+**Also used** · 함께 사용하는 기술
+
+<p>
+  <img src="assets/badges/pyproj.svg" alt="pyproj" height="36" />
+  <img src="assets/badges/ffmpeg.svg" alt="FFmpeg" height="36" />
+  <img src="assets/badges/bash.svg" alt="Bash" height="36" />
+  <img src="assets/badges/docker.svg" alt="Docker" height="36" />
+  <img src="assets/badges/mapkit.svg" alt="MapKit" height="36" />
+  <img src="assets/badges/google-maps.svg" alt="Google Maps" height="36" />
+  <img src="assets/badges/mlkit.svg" alt="ML Kit" height="36" />
+  <img src="assets/badges/uniffi.svg" alt="UniFFI" height="36" />
+  <img src="assets/badges/jni.svg" alt="JNI" height="36" />
+  <img src="assets/badges/pydantic.svg" alt="Pydantic" height="36" />
+  <img src="assets/badges/osrm.svg" alt="OSRM" height="36" />
+  <img src="assets/badges/leaflet.svg" alt="Leaflet" height="36" />
+</p>
 
 ---
 

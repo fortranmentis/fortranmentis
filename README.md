@@ -5,6 +5,13 @@
 </p>
 
 <p align="center">
+  <a href="https://fortranmentis.github.io/"><img src="assets/badges/portfolio-link.svg" alt="Portfolio · Sang Hak Lee" height="32" /></a>
+  <a href="https://www.linkedin.com/in/sang-hak-lee-ba11a5447/"><img src="assets/badges/linkedin-link.svg" alt="LinkedIn · Sang Hak Lee" height="32" /></a>
+  <a href="https://apps.apple.com/app/gputerm/id6824499888"><img src="assets/badges/gputerm-app-store.svg" alt="App Store · GPUTERM" height="32" /></a>
+  <a href="https://apps.apple.com/app/id6810489980"><img src="assets/badges/helppoopy-app-store.svg" alt="App Store · Korea Toilet Map" height="32" /></a>
+</p>
+
+<p align="center">
   <strong>From scientific datasets to interpretable analysis and practical tools.</strong>
 </p>
 
@@ -24,7 +31,7 @@
 
 ## Hi, I'm fortranmentis 👋
 
-I build data workflows, spatial applications, and developer tools, with a focus on **climate variability, ocean and atmospheric datasets, and geospatial analysis**. My work spans climate-data statistics, scientific file processing, analytical reporting, tool-calling AI agents, indexed location search, and native mobile interfaces for data and server workflows.
+I build data workflows, spatial applications, and developer tools, with a focus on **climate variability, ocean and atmospheric datasets, and geospatial analysis**. My work spans climate-data statistics, scientific file processing, analytical reporting, tool-calling AI agents, indexed location search, native mobile interfaces for data and server workflows, and dispatch-simulation prototypes.
 
 I care about the details that make data useful: coordinate systems, temporal coverage, missing values, explicit acceptance rules, and a clear distinction between what a result shows and what still needs validation.
 
@@ -36,6 +43,7 @@ I care about the details that make data useful: coordinate systems, temporal cov
 | **Forecast diagnostics** | Paired-product comparisons, model/warning difference summaries, and event-day reporting |
 | **AI agents** | Typed tool calling, public-data integration, rule-based itinerary drafts, and inspectable source evidence |
 | **Spatial applications** | Indexed local datasets, location/heading-aware search, opening-hours logic, and native iOS/Android experiences |
+| **Operational simulation** | Deterministic dispatch scenarios, stage-level schedules, and turnaround summaries with documented resource constraints |
 | **Developer tooling** | SSH/SFTP workflows, GPU/server telemetry, and LLM runtime monitoring |
 
 <a id="toolbox"></a>
@@ -129,10 +137,9 @@ I care about the details that make data useful: coordinate systems, temporal cov
 
 **Turn public coastal data into a travel draft whose inputs and decisions can be inspected.**
 
-A local prototype for one- to three-day family car trips across Yeongjong–Yongyu, Ganghwa, and Songdo–urban Incheon. Combines TourAPI tourism records, eight marine forecast feeds, and KMA weather through **five typed, allowlisted Ollama tools** and a Python itinerary engine. Pagination checks, atomic catalog updates, and freshness gates support traceable data use; the Korean web interface exposes source timestamps, OSRM road routes, and visit replacement/undo.
+A local prototype for **one- to three-day car or walking itineraries** across **29 nationwide forecast-linked scopes**: 25 ground/bridge scopes and four conditional island scopes. Combines TourAPI tourism records, eight marine forecast feeds, KMA weather, and transport evidence through **eight typed Ollama tools** and a Python itinerary engine. Source timestamps, freshness checks, OSRM road routes, visit replacement/undo, and PDF export make drafts inspectable. Official transport API adapters add bus, subway, and dated ferry references.
 
-**Only mudflat experiences are automatically scheduled as marine activities.** Itineraries remain provisional: operator availability, age limits, warning bulletins, and on-site access require separate checks. The [validation record](https://github.com/fortranmentis/marine-travel-AI-agent/blob/main/VALIDATION.md) reports offline regression coverage; it does not establish live-provider availability, model reliability, or travel safety.
-
+Itineraries remain provisional. Conditional island plans require separate round-trip access checks; operator availability, reservations, age limits, warning bulletins, and on-site access are not established by the draft. The [validation record](https://github.com/fortranmentis/marine-travel-AI-agent/blob/main/VALIDATION.md) distinguishes offline tests from live-provider observations.
 <p>
   <img src="assets/badges/python.svg" alt="Python" height="28" />
   <img src="assets/badges/fastapi.svg" alt="FastAPI" height="28" />
@@ -212,11 +219,25 @@ Combines AIS trajectories, vessel metadata, and fairway/anchorage polygons to vi
   <img src="assets/badges/ffmpeg.svg" alt="FFmpeg" height="28" />
 </p>
 
+<a id="truck-dispatch-simulator"></a>
+
+### 🚚 [Truck Dispatch Simulator](https://github.com/fortranmentis/truck-dispatch-simulator)
+
+**Explore how dispatch order and intervals change truck turnaround.**
+
+A Python/Tkinter prototype models empty-bottle and empty trucks through inspection, unloading, loading, and outbound stages. Scenario inputs produce stage-level timestamps, loading groups, and per-truck / truck-type mean turnaround times. Original requirements, source iterations, and Excel references keep the assumptions traceable.
+
+The current scheduler has reproducible resource conflicts, including capacity violations in its supplied example. Outputs are **prototype calculations, not validated operational schedules**; see the [diagnostic evidence](https://github.com/fortranmentis/truck-dispatch-simulator/blob/main/docs/VALIDATION.md).
+
+<p>
+  <img src="assets/badges/python.svg" alt="Python" height="28" />
+</p>
+
 ### 🖥️ [GPUTERM](https://github.com/fortranmentis/GPUTERM)
 
 **Bring remote server work into one desktop workspace.**
 
-Combines an SSH terminal, SFTP transfers, and live system/GPU telemetry. Includes monitoring adapters for Ollama, vLLM, and other LLM runtimes, supporting the infrastructure side of data and compute workflows.
+Combines split SSH/local terminals, SFTP transfers, and live system/GPU telemetry. Includes monitoring adapters for Ollama, vLLM, and other LLM runtimes, resource history and alerts, reusable SSH keys, and container/Kubernetes and PostgreSQL/MySQL monitoring where supported by the remote environment. Built with Rust, Tauri and React; desktop releases remain beta.
 
 <p>
   <img src="assets/badges/rust.svg" alt="Rust" height="28" />
@@ -237,7 +258,7 @@ Alongside the public projects, I develop the following tools in private reposito
 
 **Extend remote compute workflows to native mobile workspaces.**
 
-Native SSH/SFTP clients with system/GPU telemetry and LLM runtime monitoring. The iOS app connects **SwiftUI to Rust through UniFFI**; the Android app connects **Kotlin/Jetpack Compose to Rust through JNI**. The work includes terminal interaction, file transfers, adaptive layouts, and platform-specific credential handling.
+Native SSH/SFTP clients with system/GPU telemetry and LLM runtime monitoring. The iOS app connects **SwiftUI to Rust through UniFFI**; the Android app connects **Kotlin/Jetpack Compose to Rust through JNI**. The native implementations include split terminals, SFTP queues, history and alerts, reusable SSH keys, and container/database monitoring. iOS uses SwiftTerm and Keychain; Android uses native terminal rendering and Keystore-backed credential handling with adaptive phone/tablet/desktop layouts. Android publication remains release preparation; no Google Play availability is claimed.
 
 <p>
   <img src="assets/badges/swiftui.svg" alt="SwiftUI" height="28" />
@@ -252,7 +273,7 @@ Native SSH/SFTP clients with system/GPU telemetry and LLM runtime monitoring. Th
 
 **Turn location datasets into useful decisions on a phone.**
 
-Native iOS and Android restroom-finding apps with pedestrian discovery, direction-aware driving recommendations, operating-hours filters, and navigation handoff. A build-time Python workflow prepares **SQLCipher-backed SQLite data with R-Tree spatial indexes**, enabling viewport queries and local filtering. The apps also provide localized interfaces and on-device text translation.
+Native iOS and Android restroom-finding apps with pedestrian discovery, direction-aware driving recommendations, operating-hours filters, and navigation handoff. A build-time Python workflow prepares **SQLCipher-backed SQLite data with R-Tree spatial indexes**, enabling viewport queries and local filtering. The apps also provide localized interfaces and on-device text translation. Search applies precise distance and travel-heading rules after spatial-index retrieval, including weekday/overnight opening-hours handling and fallback searches for open locations. Bundled database encryption discourages casual extraction; it does not guarantee secrecy against reverse engineering.
 
 <p>
   <img src="assets/badges/swiftui.svg" alt="SwiftUI" height="28" />
@@ -296,7 +317,7 @@ Also on this GitHub: [Korea Toilet Map](https://github.com/fortranmentis/Korea-T
 
 ## 안녕하세요, fortranmentis입니다 👋
 
-**기후 변동성, 해양·대기 데이터, 공간정보 분석**을 중심으로 데이터 워크플로, 위치 기반 앱, 개발 도구를 만듭니다. 기후자료 통계, 과학 데이터 처리와 분석 보고서, 도구 호출 기반 AI 에이전트부터 공간 인덱스를 활용한 위치 검색, 데이터·서버 작업을 위한 네이티브 모바일 UI까지 연결합니다.
+**기후 변동성, 해양·대기 데이터, 공간정보 분석**을 중심으로 데이터 워크플로, 위치 기반 앱, 개발 도구를 만듭니다. 기후자료 통계, 과학 데이터 처리와 분석 보고서, 도구 호출 기반 AI 에이전트부터 공간 인덱스를 활용한 위치 검색, 데이터·서버 작업을 위한 네이티브 모바일 UI와 배차 시뮬레이션까지 연결합니다.
 
 좌표계, 시간 범위, 결측값, 명시적인 통과 조건처럼 데이터 활용의 신뢰도를 좌우하는 세부사항을 중요하게 생각합니다. 결과가 보여주는 내용과 추가 검증이 필요한 범위를 구분해 설명하는 것을 지향합니다.
 
@@ -308,19 +329,21 @@ Also on this GitHub: [Korea Toilet Map](https://github.com/fortranmentis/Korea-T
 | **예보 변경 분석** | 서비스·예측 자료 비교, 모델 요소·특보 차이 요약, 특이사항 발생일 보고 |
 | **AI 에이전트** | 타입이 정의된 도구 호출, 공공데이터 연계, 규칙 기반 일정 초안, 출처·판정 근거 확인 |
 | **위치 기반 앱** | 공간 인덱스가 있는 로컬 데이터, 위치·방향 기반 검색, 운영시간 판정, iOS·Android 네이티브 UI |
+| **운영 시뮬레이션** | 배차 조건별 작업 일정·소요시간 집계, 명시적인 자원 제약과 진단 기록 |
 | **개발·운영 도구** | SSH·SFTP 작업 환경, GPU·서버 텔레메트리, LLM 런타임 모니터링 |
 
 ### 주요 프로젝트
 
 | 프로젝트 | 해결하는 문제와 구현 내용 |
 | :--- | :--- |
-| 🧭 **[Marine Travel AI Agent · 바다결](https://github.com/fortranmentis/marine-travel-AI-agent)** | 영종·용유, 강화, 송도·인천 도심의 1~3일 가족 차량 여행 초안을 만드는 로컬 프로토타입입니다. TourAPI 관광정보·8개 해양예보·기상청 예보를 **허용된 5개 Ollama 도구와 Python 일정 규칙**으로 연결합니다. 페이지 수집·원자적 갱신·신선도 점검과 출처 시각·OSRM 도로 경로·방문지 교체·되돌리기를 제공합니다. 해양활동 자동 배치는 **갯벌체험에 한정**하며 운영·연령·특보·현장 접근 조건은 별도 확인이 필요합니다. [오프라인 검증 기록](https://github.com/fortranmentis/marine-travel-AI-agent/blob/main/VALIDATION.md)은 실제 API 가용성·모델 신뢰성·여행 안전성을 입증하지 않습니다. |
+| 🧭 **[Marine Travel AI Agent · 바다결](https://github.com/fortranmentis/marine-travel-AI-agent)** | **전국 29개 예보 연계 범위**에서 1~3일 차량·도보 일정 초안을 만듭니다. 관광·해양·기상·교통 데이터를 **8개 타입 검증 Ollama 도구와 Python 일정 규칙**으로 연결합니다. 25개 육상·연륙 범위와 4개 조건부 도서 범위를 지원하며, 출처 시각·신선도 점검·경로·방문지 교체·되돌리기·PDF 출력을 제공합니다. 버스·지하철·날짜별 배편 참고 정보를 연결하되 예약·왕복 접근·특보·현장 조건은 별도 확인이 필요합니다. [검증 범위](https://github.com/fortranmentis/marine-travel-AI-agent/blob/main/VALIDATION.md)를 함께 제시합니다. |
 | 🌏 **[Climate Variability Analysis](https://github.com/fortranmentis/climate-variability-analysis_Jeonbuk-National-University)** | 전주 강설·적설과 해수면 온도·대기 순환·해빙의 통계적 관계를 다루는 전북대학교 관련 연구·수업 자료 아카이브입니다. Fortran·GrADS·MATLAB으로 회귀·합성·EOF·필터링·스펙트럼 분석을 다룹니다. 단일 회귀 예제의 실행 기록은 있으나 전체 분석과 그림·과학적 결론의 재현은 [추가 검증이 필요합니다](https://github.com/fortranmentis/climate-variability-analysis_Jeonbuk-National-University/blob/main/VALIDATION.md). |
 | 🌊 **[Ocean Forecast GeoPipeline](https://github.com/fortranmentis/ocean-forecast-geopipeline)** | 반복적으로 제공되는 해양·해빙 산출물을 공간 서비스로 연결합니다. NetCDF·CSV 규격 비교, 재격자화·재투영, U/V 기반 유속·방향 산출, PostgreSQL 갱신, 지정된 GeoServer 레이어 발행을 수행하며 항목별 판정 근거를 보고서에 남깁니다. |
 | 📍 **[Multi-Model Grid Validator](https://github.com/fortranmentis/multi-model-grid-validator)** | 지점별로 값 점검 조건을 충족하는 최근접 모델 격자를 찾습니다. 해양·파랑·대기 **15개 설정**, **반경 40 km**를 지원합니다. 비 WRF 모델은 최초 **최대 20개 시점**의 값을 점검하고, WRF는 좌표로 매칭합니다. 모델별 병렬 처리 결과를 CSV로 통합합니다. |
 | 📊 **[Marine Forecast Index Stats](https://github.com/fortranmentis/marine-forecast-index-stats)** | Python·pandas로 생활해양예보지수의 서비스·예측 자료를 비교하고 지수 변경, 모델 요소·기상특보 차이, 특이사항 발생일과 중복 조건을 집계합니다. 권역·항로·선박별 요약 및 Excel·CSV·HTML 출력 코드를 포함하며, 관측 대비 예보 정확도를 평가하는 도구는 아닙니다. 기존 실행 환경의 호환성과 산출값 대사는 [추가 검증이 필요합니다](https://github.com/fortranmentis/marine-forecast-index-stats/blob/master/VALIDATION.md). |
 | 🚢 **[Busan AIS Ship Behavior Analysis](https://github.com/fortranmentis/Busan-AIS-ship-behavior-analysis)** | AIS 궤적·선박 메타데이터·항로 및 정박지 폴리곤을 결합해 정지 상태, 항로 이탈, 활동 후보를 지도 타임랩스로 보여줍니다. 공간 전처리와 병렬 렌더링을 활용하며, **활동 표시는 독립적인 확인이 필요한 규칙 기반 후보**입니다. |
-| 🖥️ **[GPUTERM](https://github.com/fortranmentis/GPUTERM)** | SSH 터미널, SFTP 전송, 시스템·GPU 텔레메트리를 하나의 데스크톱 작업 공간으로 통합합니다. Ollama·vLLM 등 LLM 런타임 모니터링을 제공해 데이터·연산 작업의 서버 운영을 지원합니다. |
+| 🚚 **[Truck Dispatch Simulator](https://github.com/fortranmentis/truck-dispatch-simulator)** | Python/Tkinter로 공병·공차 트럭의 배차 순서·간격에 따른 공정별 시각, 상차 그룹, 트럭별·차종별 평균 소요시간을 계산합니다. 원본 요구사항·코드·엑셀 참고자료를 보존했습니다. 현재 스케줄러는 자원 중복·용량 초과가 재현되는 연구용 프로토타입이며 [운영 일정으로 검증되지 않았습니다](https://github.com/fortranmentis/truck-dispatch-simulator/blob/main/docs/VALIDATION.md). |
+| 🖥️ **[GPUTERM](https://github.com/fortranmentis/GPUTERM)** | 분할 SSH·로컬 터미널, SFTP, 시스템·GPU·LLM 런타임 모니터링을 통합합니다. 이력·알림·재사용 SSH 키와 원격 환경이 지원하는 컨테이너·Kubernetes·PostgreSQL/MySQL 모니터링을 제공합니다. Rust·Tauri·React 기반 데스크톱 베타입니다. |
 
 [AIS·GPUTERM 화면 보기 ↑](#user-content-in-action) · [GPUTERM 다운로드](https://github.com/fortranmentis/GPUTERM/releases) · [전체 저장소](https://github.com/fortranmentis?tab=repositories)
 
@@ -332,8 +355,8 @@ Also on this GitHub: [Korea Toilet Map](https://github.com/fortranmentis/Korea-T
 
 | 프로젝트 | 구현 범위와 기술 |
 | :--- | :--- |
-| 📱 **GPUTERM iOS·Android** | SSH·SFTP, 시스템·GPU 텔레메트리, LLM 런타임 모니터링을 네이티브 모바일 환경으로 확장합니다. iOS는 **SwiftUI–UniFFI–Rust**, Android는 **Kotlin/Compose–JNI–Rust** 구조를 사용합니다. 터미널 입력, 파일 전송, 적응형 레이아웃, 플랫폼별 자격증명 처리를 다룹니다. [App Store에서 GPUTERM iOS 다운로드 →](https://apps.apple.com/app/gputerm/id6824499888) |
-| 🗺️ **HelpPoopy / 한국 화장실 지도** | 보행자 검색, 진행 방향을 고려한 운전자 추천, 운영시간 필터, 내비게이션 연결을 제공하는 iOS·Android 앱입니다. Python으로 준비한 **SQLCipher 기반 SQLite·R-Tree 공간 인덱스**를 활용해 지도 화면 범위 조회와 로컬 필터링을 수행합니다. 다국어 UI와 기기 내 텍스트 번역도 제공합니다. [App Store에서 iOS 앱 다운로드 →](https://apps.apple.com/us/app/%ED%95%9C%EA%B5%AD-%ED%99%94%EC%9E%A5%EC%8B%A4-%EC%A7%80%EB%8F%84/id6810489980) |
+| 📱 **GPUTERM iOS·Android** | SSH·SFTP, 시스템·GPU 텔레메트리, LLM 런타임 모니터링을 네이티브 모바일 환경으로 확장합니다. iOS는 **SwiftUI–UniFFI–Rust**, Android는 **Kotlin/Compose–JNI–Rust** 구조를 사용합니다. 분할 터미널·전송 큐·이력·알림·재사용 SSH 키·컨테이너/DB 모니터링과 적응형 작업 공간을 제공합니다. iOS는 SwiftTerm·Keychain, Android는 네이티브 터미널·Keystore를 사용합니다. Android는 출시 준비 단계이며 Google Play 출시를 주장하지 않습니다. [App Store에서 GPUTERM iOS 다운로드 →](https://apps.apple.com/app/gputerm/id6824499888) |
+| 🗺️ **HelpPoopy / 한국 화장실 지도** | 보행자 검색, 진행 방향을 고려한 운전자 추천, 운영시간 필터, 내비게이션 연결을 제공하는 iOS·Android 앱입니다. Python으로 준비한 **SQLCipher 기반 SQLite·R-Tree 공간 인덱스**를 활용해 지도 화면 범위 조회와 로컬 필터링을 수행합니다. 정밀 거리·진행 방향·요일별/심야 운영시간·확장 검색 규칙과 다국어 UI·기기 내 번역을 제공합니다. 번들 DB 암호화는 단순 추출을 어렵게 하지만 역공학에 대한 비밀성을 보장하지 않습니다. [App Store에서 iOS 앱 다운로드 →](https://apps.apple.com/us/app/%ED%95%9C%EA%B5%AD-%ED%99%94%EC%9E%A5%EC%8B%A4-%EC%A7%80%EB%8F%84/id6810489980) |
 
 ### 사용하는 기술
 

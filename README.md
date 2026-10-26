@@ -246,6 +246,8 @@ Native SSH/SFTP clients with system/GPU telemetry and LLM runtime monitoring. Th
   <img src="assets/badges/rust.svg" alt="Rust" height="28" />
 </p>
 
+[Download GPUTERM for iOS on the App Store →](https://apps.apple.com/app/gputerm/id6824499888)
+
 ### 🗺️ HelpPoopy / Korea Toilet Map
 
 **Turn location datasets into useful decisions on a phone.**
@@ -330,7 +332,7 @@ Also on this GitHub: [Korea Toilet Map](https://github.com/fortranmentis/Korea-T
 
 | 프로젝트 | 구현 범위와 기술 |
 | :--- | :--- |
-| 📱 **GPUTERM iOS·Android** | SSH·SFTP, 시스템·GPU 텔레메트리, LLM 런타임 모니터링을 네이티브 모바일 환경으로 확장합니다. iOS는 **SwiftUI–UniFFI–Rust**, Android는 **Kotlin/Compose–JNI–Rust** 구조를 사용합니다. 터미널 입력, 파일 전송, 적응형 레이아웃, 플랫폼별 자격증명 처리를 다룹니다. |
+| 📱 **GPUTERM iOS·Android** | SSH·SFTP, 시스템·GPU 텔레메트리, LLM 런타임 모니터링을 네이티브 모바일 환경으로 확장합니다. iOS는 **SwiftUI–UniFFI–Rust**, Android는 **Kotlin/Compose–JNI–Rust** 구조를 사용합니다. 터미널 입력, 파일 전송, 적응형 레이아웃, 플랫폼별 자격증명 처리를 다룹니다. [App Store에서 GPUTERM iOS 다운로드 →](https://apps.apple.com/app/gputerm/id6824499888) |
 | 🗺️ **HelpPoopy / 한국 화장실 지도** | 보행자 검색, 진행 방향을 고려한 운전자 추천, 운영시간 필터, 내비게이션 연결을 제공하는 iOS·Android 앱입니다. Python으로 준비한 **SQLCipher 기반 SQLite·R-Tree 공간 인덱스**를 활용해 지도 화면 범위 조회와 로컬 필터링을 수행합니다. 다국어 UI와 기기 내 텍스트 번역도 제공합니다. [App Store에서 iOS 앱 다운로드 →](https://apps.apple.com/us/app/%ED%95%9C%EA%B5%AD-%ED%99%94%EC%9E%A5%EC%8B%A4-%EC%A7%80%EB%8F%84/id6810489980) |
 
 ### 사용하는 기술

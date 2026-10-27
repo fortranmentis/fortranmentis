@@ -32,6 +32,8 @@
 
 ## Hi, I'm fortranmentis 👋
 
+I am a **Data Engineer at GeoSR**, working with **marine and meteorological data**, scientific pipelines, forecast analytics and geospatial workflows.
+
 I build data workflows, spatial applications, and developer tools, with a focus on **climate variability, ocean and atmospheric datasets, and geospatial analysis**. My work spans climate-data statistics, scientific file processing, analytical reporting, tool-calling AI agents, indexed location search, native mobile interfaces for data and server workflows, and dispatch-simulation prototypes.
 
 I care about the details that make data useful: coordinate systems, temporal coverage, missing values, explicit acceptance rules, and a clear distinction between what a result shows and what still needs validation.
@@ -338,6 +340,8 @@ Also on this GitHub: [Korea Toilet Map](https://github.com/fortranmentis/Korea-T
 <a id="한국어"></a>
 
 ## 안녕하세요, fortranmentis입니다 👋
+
+저는 **GeoSR(지오시스템리서치)의 Data Engineer**로, **해양·기상 데이터**를 다룹니다. 과학 데이터 처리, 예보 분석과 공간정보 워크플로를 현업 서비스로 연결합니다.
 
 **기후 변동성, 해양·대기 데이터, 공간정보 분석**을 중심으로 데이터 워크플로, 위치 기반 앱, 개발 도구를 만듭니다. 기후자료 통계, 과학 데이터 처리와 분석 보고서, 도구 호출 기반 AI 에이전트부터 공간 인덱스를 활용한 위치 검색, 데이터·서버 작업을 위한 네이티브 모바일 UI와 배차 시뮬레이션까지 연결합니다.
 

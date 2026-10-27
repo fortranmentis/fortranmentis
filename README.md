@@ -19,6 +19,7 @@
   <a href="#user-content-english">English</a> ·
   <a href="#user-content-한국어">한국어</a> ·
   <a href="#user-content-selected-projects">Projects</a> ·
+  <a href="#user-content-research-materials">Research</a> ·
   <a href="#user-content-private-work">Private work</a> ·
   <a href="#user-content-in-action">Demos</a> ·
   <a href="#user-content-toolbox">Tech Stack</a> ·
@@ -154,6 +155,8 @@ Itineraries remain provisional. Conditional island plans require separate round-
 
 A research and coursework archive associated with Jeonbuk National University, examining Jeonju snowfall/snow depth alongside sea surface temperature, atmospheric circulation, and sea ice. Fortran programs, GrADS scripts, and MATLAB routines cover regression, composites, EOF analysis, filtering, and spectral methods.
 
+The **2021 coauthored undergraduate thesis** connects 1983–2021 Jeonju snow observations with NOAA reanalysis through seasonal means, lagged regression and LBM response comparisons. The thesis reports an ENSO association for maximum snow depth and a weaker relation for snow days. [Original thesis, presentation and figures](https://github.com/fortranmentis/climate-variability-analysis_Jeonbuk-National-University#thesis) are linked beside the code.
+
 The [validation record](https://github.com/fortranmentis/climate-variability-analysis_Jeonbuk-National-University/blob/main/VALIDATION.md) documents a limited regression execution check. Full scientific replication, GrADS figure regeneration, and MATLAB execution remain unverified.
 
 <p>
@@ -209,7 +212,7 @@ Python/pandas scripts compare paired service and prediction spreadsheets, summar
 
 **Make vessel movement patterns inspectable through rules and spatial context.**
 
-Combines AIS trajectories, vessel metadata, and fairway/anchorage polygons to visualize stationary states, fairway exits, and candidate activities. Spatial preprocessing and parallel rendering produce satellite-map time-lapse videos. **Activity labels are heuristic candidates** that require independent confirmation.
+Combines AIS trajectories, vessel metadata, and fairway/anchorage polygons to visualize stationary states, fairway exits, and candidate activities. Spatial preprocessing and parallel rendering produce satellite-map time-lapse videos. **Activity labels are heuristic candidates** that require independent confirmation. The [2024 conference poster and January 14, 2025 workshop presentation](https://github.com/fortranmentis/Busan-AIS-ship-behavior-analysis#research-presentations) add methods and map examples; presentation settings are documented separately from the public implementation.
 
 <p>
   <img src="assets/badges/python.svg" alt="Python" height="28" />
@@ -302,6 +305,25 @@ Native iOS and Android restroom-finding apps with pedestrian discovery, directio
 
 *Repository demo assets. The AIS animation illustrates the interface and heuristic overlays; it is not an accuracy benchmark.*
 
+<a id="research-materials"></a>
+
+## Research materials
+
+<table>
+  <tr><th>Climate and snowfall</th><th>Maritime AIS</th></tr>
+  <tr>
+    <td width="50%" align="center"><a href="https://github.com/fortranmentis/climate-variability-analysis_Jeonbuk-National-University#thesis"><img src="https://fortranmentis.github.io/assets/research/thesis-regression.webp" alt="Lagged regression fields from the coauthored 2021 thesis" height="270" /></a></td>
+    <td width="50%" align="center"><a href="https://github.com/fortranmentis/Busan-AIS-ship-behavior-analysis#research-presentations"><img src="https://fortranmentis.github.io/assets/research/ais-workshop-navigation.webp" alt="Navigation-state indicators from the January 2025 workshop" height="270" /></a></td>
+  </tr>
+</table>
+
+| Research | Documents |
+| :--- | :--- |
+| **2021 coauthored thesis** | [PDF](https://fortranmentis.github.io/assets/research/jeonju-snow-thesis-2021.pdf) · [Presentation](https://fortranmentis.github.io/assets/research/jeonju-snow-presentation-2021.pptx) |
+| **2024 poster / 2025 workshop** | [Korean poster](https://fortranmentis.github.io/assets/research/ais-poster-ko.pdf) · [English translation](https://fortranmentis.github.io/assets/research/ais-poster-en.pdf) · [Workshop PPTX](https://fortranmentis.github.io/assets/research/ais-workshop-2025.pptx) |
+
+Research documents and figures describe reported work; code execution and validation have their own scopes. AIS indicators remain candidates, and thesis findings are not independently replicated here.
+
 ## How I approach data work
 
 - **Define the contract.** Make input schemas, units, coordinate systems, and time semantics explicit.
@@ -337,17 +359,24 @@ Also on this GitHub: [Korea Toilet Map](https://github.com/fortranmentis/Korea-T
 | 프로젝트 | 해결하는 문제와 구현 내용 |
 | :--- | :--- |
 | 🧭 **[Marine Travel AI Agent · 바다결](https://github.com/fortranmentis/marine-travel-AI-agent)** | **전국 29개 예보 연계 범위**에서 1~3일 차량·도보 일정 초안을 만듭니다. 관광·해양·기상·교통 데이터를 **8개 타입 검증 Ollama 도구와 Python 일정 규칙**으로 연결합니다. 25개 육상·연륙 범위와 4개 조건부 도서 범위를 지원하며, 출처 시각·신선도 점검·경로·방문지 교체·되돌리기·PDF 출력을 제공합니다. 버스·지하철·날짜별 배편 참고 정보를 연결하되 예약·왕복 접근·특보·현장 조건은 별도 확인이 필요합니다. [검증 범위](https://github.com/fortranmentis/marine-travel-AI-agent/blob/main/VALIDATION.md)를 함께 제시합니다. |
-| 🌏 **[Climate Variability Analysis](https://github.com/fortranmentis/climate-variability-analysis_Jeonbuk-National-University)** | 전주 강설·적설과 해수면 온도·대기 순환·해빙의 통계적 관계를 다루는 전북대학교 관련 연구·수업 자료 아카이브입니다. Fortran·GrADS·MATLAB으로 회귀·합성·EOF·필터링·스펙트럼 분석을 다룹니다. 단일 회귀 예제의 실행 기록은 있으나 전체 분석과 그림·과학적 결론의 재현은 [추가 검증이 필요합니다](https://github.com/fortranmentis/climate-variability-analysis_Jeonbuk-National-University/blob/main/VALIDATION.md). |
+| 🌏 **[Climate Variability Analysis](https://github.com/fortranmentis/climate-variability-analysis_Jeonbuk-National-University)** | 전주 강설·적설과 해수면 온도·대기 순환·해빙의 통계적 관계를 다루는 전북대학교 관련 연구·수업 자료 아카이브입니다. Fortran·GrADS·MATLAB으로 회귀·합성·EOF·필터링·스펙트럼 분석을 다룹니다. **2021년 공동 졸업논문**의 1983–2021년 전주 관측·NOAA 재분석, 시차 회귀·LBM 비교 및 [논문·발표자료·그림](https://github.com/fortranmentis/climate-variability-analysis_Jeonbuk-National-University#thesis)을 함께 소개합니다. 단일 회귀 예제의 실행 기록은 있으나 전체 분석과 그림·과학적 결론의 재현은 [추가 검증이 필요합니다](https://github.com/fortranmentis/climate-variability-analysis_Jeonbuk-National-University/blob/main/VALIDATION.md). |
 | 🌊 **[Ocean Forecast GeoPipeline](https://github.com/fortranmentis/ocean-forecast-geopipeline)** | 반복적으로 제공되는 해양·해빙 산출물을 공간 서비스로 연결합니다. NetCDF·CSV 규격 비교, 재격자화·재투영, U/V 기반 유속·방향 산출, PostgreSQL 갱신, 지정된 GeoServer 레이어 발행을 수행하며 항목별 판정 근거를 보고서에 남깁니다. |
 | 📍 **[Multi-Model Grid Validator](https://github.com/fortranmentis/multi-model-grid-validator)** | 지점별로 값 점검 조건을 충족하는 최근접 모델 격자를 찾습니다. 해양·파랑·대기 **15개 설정**, **반경 40 km**를 지원합니다. 비 WRF 모델은 최초 **최대 20개 시점**의 값을 점검하고, WRF는 좌표로 매칭합니다. 모델별 병렬 처리 결과를 CSV로 통합합니다. |
 | 📊 **[Marine Forecast Index Stats](https://github.com/fortranmentis/marine-forecast-index-stats)** | Python·pandas로 생활해양예보지수의 서비스·예측 자료를 비교하고 지수 변경, 모델 요소·기상특보 차이, 특이사항 발생일과 중복 조건을 집계합니다. 권역·항로·선박별 요약 및 Excel·CSV·HTML 출력 코드를 포함하며, 관측 대비 예보 정확도를 평가하는 도구는 아닙니다. 기존 실행 환경의 호환성과 산출값 대사는 [추가 검증이 필요합니다](https://github.com/fortranmentis/marine-forecast-index-stats/blob/master/VALIDATION.md). |
-| 🚢 **[Busan AIS Ship Behavior Analysis](https://github.com/fortranmentis/Busan-AIS-ship-behavior-analysis)** | AIS 궤적·선박 메타데이터·항로 및 정박지 폴리곤을 결합해 정지 상태, 항로 이탈, 활동 후보를 지도 타임랩스로 보여줍니다. 공간 전처리와 병렬 렌더링을 활용하며, **활동 표시는 독립적인 확인이 필요한 규칙 기반 후보**입니다. |
+| 🚢 **[Busan AIS Ship Behavior Analysis](https://github.com/fortranmentis/Busan-AIS-ship-behavior-analysis)** | AIS 궤적·선박 메타데이터·항로 및 정박지 폴리곤을 결합해 정지 상태, 항로 이탈, 활동 후보를 지도 타임랩스로 보여줍니다. 공간 전처리와 병렬 렌더링을 활용하며, **활동 표시는 독립적인 확인이 필요한 규칙 기반 후보**입니다. [2024 학회 포스터·2025.01.14 워크숍 발표](https://github.com/fortranmentis/Busan-AIS-ship-behavior-analysis#research-presentations)의 방법·예시와 공개 코드의 설정 차이를 함께 설명합니다. |
 | 🚚 **[Truck Dispatch Simulator](https://github.com/fortranmentis/truck-dispatch-simulator)** | Python/Tkinter로 공병·공차 트럭의 배차 순서·간격에 따른 공정별 시각, 상차 그룹, 트럭별·차종별 평균 소요시간을 계산합니다. 원본 요구사항·코드·엑셀 참고자료를 보존했습니다. 현재 스케줄러는 자원 중복·용량 초과가 재현되는 연구용 프로토타입이며 [운영 일정으로 검증되지 않았습니다](https://github.com/fortranmentis/truck-dispatch-simulator/blob/main/docs/VALIDATION.md). |
 | 🖥️ **[GPUTERM](https://github.com/fortranmentis/GPUTERM)** | 분할 SSH·로컬 터미널, SFTP, 시스템·GPU·LLM 런타임 모니터링을 통합합니다. 이력·알림·재사용 SSH 키와 원격 환경이 지원하는 컨테이너·Kubernetes·PostgreSQL/MySQL 모니터링을 제공합니다. Rust·Tauri·React 기반 데스크톱 베타입니다. |
 
 [AIS·GPUTERM 화면 보기 ↑](#user-content-in-action) · [GPUTERM 다운로드](https://github.com/fortranmentis/GPUTERM/releases) · [전체 저장소](https://github.com/fortranmentis?tab=repositories)
 
 위 AIS 데모는 화면과 규칙 기반 표시의 예시이며, 분류 정확도 검증 결과를 의미하지 않습니다.
+
+### 연구·발표 자료
+
+- **기후 졸업연구:** [2021년 공동 논문·연구 방법·결과 그림](https://github.com/fortranmentis/climate-variability-analysis_Jeonbuk-National-University#thesis) · [원문 PDF](https://fortranmentis.github.io/assets/research/jeonju-snow-thesis-2021.pdf) · [발표자료](https://fortranmentis.github.io/assets/research/jeonju-snow-presentation-2021.pptx)
+- **AIS 연구:** [포스터·워크숍 연구 설명](https://github.com/fortranmentis/Busan-AIS-ship-behavior-analysis#research-presentations) · [한국어 포스터](https://fortranmentis.github.io/assets/research/ais-poster-ko.pdf) · [영문 번역본](https://fortranmentis.github.io/assets/research/ais-poster-en.pdf) · [2025 워크숍 PPTX](https://fortranmentis.github.io/assets/research/ais-workshop-2025.pptx)
+
+논문·발표자료의 보고 결과와 공개 코드의 실행·검증 범위는 구분합니다. 논문은 공동연구이며 AIS 행위 표시는 확정된 실제 사건이 아닌 후보입니다.
 
 ### 비공개 프로젝트 경험
 
@@ -396,3 +425,4 @@ Also on this GitHub: [Korea Toilet Map](https://github.com/fortranmentis/Korea-T
 <p align="center">
   <a href="#user-content-top">Back to top ↑</a> · <a href="#user-content-english">English</a> · <a href="#user-content-한국어">한국어</a>
 </p>
+

@@ -34,6 +34,8 @@
 
 I am a **Data Engineer at GeoSR**, working with **marine and meteorological data**, scientific pipelines, forecast analytics and geospatial workflows.
 
+**Credentials:** Engineer Meteorology (기상기사) · Engineer Ocean Environment (해양환경기사) · Weather Forecaster License (기상예보사).
+
 I build data workflows, spatial applications, and developer tools, with a focus on **climate variability, ocean and atmospheric datasets, and geospatial analysis**. My work spans climate-data statistics, scientific file processing, analytical reporting, tool-calling AI agents, indexed location search, native mobile interfaces for data and server workflows, and dispatch-simulation prototypes.
 
 I care about the details that make data useful: coordinate systems, temporal coverage, missing values, explicit acceptance rules, and a clear distinction between what a result shows and what still needs validation.
@@ -323,6 +325,7 @@ Native iOS and Android restroom-finding apps with pedestrian discovery, directio
 | :--- | :--- |
 | **2021 coauthored thesis** | [PDF](https://fortranmentis.github.io/assets/research/jeonju-snow-thesis-2021.pdf) · [Presentation](https://fortranmentis.github.io/assets/research/jeonju-snow-presentation-2021.pptx) |
 | **2024 poster / 2025 workshop** | [Korean poster](https://fortranmentis.github.io/assets/research/ais-poster-ko.pdf) · [English translation](https://fortranmentis.github.io/assets/research/ais-poster-en.pdf) · [Workshop PPTX](https://fortranmentis.github.io/assets/research/ais-workshop-2025.pptx) |
+| **Research-club study · Sahel** | [Methods, original figures & interpretation limits](https://fortranmentis.github.io/#sahel-research) · Grand Prize awarded February 9, 2021. Collaborative SST/OLR, rainfall and soil-moisture analysis using 1990–2018 JJA data. |
 
 Research documents and figures describe reported work; code execution and validation have their own scopes. AIS indicators remain candidates, and thesis findings are not independently replicated here.
 
@@ -342,6 +345,10 @@ Also on this GitHub: [Korea Toilet Map](https://github.com/fortranmentis/Korea-T
 ## 안녕하세요, fortranmentis입니다 👋
 
 저는 **GeoSR(지오시스템리서치)의 Data Engineer**로, **해양·기상 데이터**를 다룹니다. 과학 데이터 처리, 예보 분석과 공간정보 워크플로를 현업 서비스로 연결합니다.
+
+**자격·면허:** 기상기사 · 해양환경기사 · 기상예보사 면허.
+
+[한국어 포트폴리오 바로가기 →](https://fortranmentis.github.io/ko/)
 
 **기후 변동성, 해양·대기 데이터, 공간정보 분석**을 중심으로 데이터 워크플로, 위치 기반 앱, 개발 도구를 만듭니다. 기후자료 통계, 과학 데이터 처리와 분석 보고서, 도구 호출 기반 AI 에이전트부터 공간 인덱스를 활용한 위치 검색, 데이터·서버 작업을 위한 네이티브 모바일 UI와 배차 시뮬레이션까지 연결합니다.
 
@@ -379,6 +386,8 @@ Also on this GitHub: [Korea Toilet Map](https://github.com/fortranmentis/Korea-T
 
 - **기후 졸업연구:** [2021년 공동 논문·연구 방법·결과 그림](https://github.com/fortranmentis/climate-variability-analysis_Jeonbuk-National-University#thesis) · [원문 PDF](https://fortranmentis.github.io/assets/research/jeonju-snow-thesis-2021.pdf) · [발표자료](https://fortranmentis.github.io/assets/research/jeonju-snow-presentation-2021.pptx)
 - **AIS 연구:** [포스터·워크숍 연구 설명](https://github.com/fortranmentis/Busan-AIS-ship-behavior-analysis#research-presentations) · [한국어 포스터](https://fortranmentis.github.io/assets/research/ais-poster-ko.pdf) · [영문 번역본](https://fortranmentis.github.io/assets/research/ais-poster-en.pdf) · [2025 워크숍 PPTX](https://fortranmentis.github.io/assets/research/ais-workshop-2025.pptx)
+
+- **연구동아리 대상:** [SST·OLR을 이용한 사헬 지대 연구·원본 그림·해석 범위](https://fortranmentis.github.io/ko/#sahel-research). 1990–2018년 여름철 흑해 SST·사헬 강수·OLR·토양수분을 분석한 공동연구이며, 2021년 2월 9일 연구동아리 대상을 받았습니다. 통계적 연관성을 인과관계나 검증된 예측 성능으로 확대하지 않습니다.
 
 논문·발표자료의 보고 결과와 공개 코드의 실행·검증 범위는 구분합니다. 논문은 공동연구이며 AIS 행위 표시는 확정된 실제 사건이 아닌 후보입니다.
 

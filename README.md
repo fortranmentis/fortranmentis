@@ -12,6 +12,12 @@
 </p>
 
 <p align="center">
+  <strong>Explore my apps · 앱 소개</strong><br />
+  <a href="https://fortranmentis.github.io/GPUTERM/">GPUTERM · English</a> · <a href="https://fortranmentis.github.io/GPUTERM/ko/">한국어</a><br />
+  Korea Toilet Map · 한국 화장실 지도: <a href="https://fortranmentis.github.io/Korea-Toilet-Map/" lang="ko">한국어</a> · <a href="https://fortranmentis.github.io/Korea-Toilet-Map/en/" lang="en">English</a> · <a href="https://fortranmentis.github.io/Korea-Toilet-Map/ja/" lang="ja">日本語</a> · <a href="https://fortranmentis.github.io/Korea-Toilet-Map/zh-hans/" lang="zh-Hans">简体中文</a> · <a href="https://fortranmentis.github.io/Korea-Toilet-Map/zh-hant/" lang="zh-Hant">繁體中文</a> · <a href="https://fortranmentis.github.io/Korea-Toilet-Map/ar/" lang="ar">العربية</a>
+</p>
+
+<p align="center">
   <strong>From scientific datasets to interpretable analysis and practical tools.</strong>
 </p>
 
@@ -232,6 +238,8 @@ Itineraries remain provisional. Conditional island plans require separate round-
 
 Combines split SSH/local terminals, SFTP transfers, and live system/GPU telemetry. Includes monitoring adapters for Ollama, vLLM, and other LLM runtimes, resource history and alerts, reusable SSH keys, and container/Kubernetes and PostgreSQL/MySQL monitoring where supported by the remote environment. Built with Rust, Tauri and React; desktop releases remain beta.
 
+[Explore the product website →](https://fortranmentis.github.io/GPUTERM/) · [한국어 →](https://fortranmentis.github.io/GPUTERM/ko/) — desktop, native iPhone/iPad and Android features, external-display workspaces, and iOS Siri/Shortcuts integration.
+
 <p>
   <img src="assets/badges/rust.svg" alt="Rust" height="28" />
   <img src="assets/badges/tauri.svg" alt="Tauri" height="28" />
@@ -274,7 +282,7 @@ Native SSH/SFTP clients with system/GPU telemetry and LLM runtime monitoring. Th
   <img src="assets/badges/rust.svg" alt="Rust" height="28" />
 </p>
 
-[Download GPUTERM for iOS on the App Store →](https://apps.apple.com/app/gputerm/id6824499888)
+[Mobile features & external-display workspaces →](https://fortranmentis.github.io/GPUTERM/#mobile) · [Download GPUTERM for iOS on the App Store →](https://apps.apple.com/app/gputerm/id6824499888)
 
 ### 🗺️ HelpPoopy / Korea Toilet Map
 
@@ -290,7 +298,7 @@ Native iOS and Android restroom-finding apps with pedestrian discovery, directio
   <img src="assets/badges/sqlcipher.svg" alt="SQLCipher" height="28" />
 </p>
 
-[Download for iOS on the App Store →](https://apps.apple.com/us/app/%ED%95%9C%EA%B5%AD-%ED%99%94%EC%9E%A5%EC%8B%A4-%EC%A7%80%EB%8F%84/id6810489980) · [Public support & privacy site →](https://fortranmentis.github.io/Korea-Toilet-Map/)
+[Download for iOS on the App Store →](https://apps.apple.com/us/app/%ED%95%9C%EA%B5%AD-%ED%99%94%EC%9E%A5%EC%8B%A4-%EC%A7%80%EB%8F%84/id6810489980) · [Product website →](https://fortranmentis.github.io/Korea-Toilet-Map/en/)
 
 <a id="in-action"></a>
 
@@ -336,7 +344,7 @@ Research documents and figures describe reported work; code execution and valida
 - **Separate checks from conclusions.** Metadata conformity, value screening, and domain accuracy answer different questions.
 - **Document the operating context.** Record configuration, dependencies, validation evidence, and recovery paths alongside code.
 
-Also on this GitHub: [Korea Toilet Map](https://github.com/fortranmentis/Korea-Toilet-Map), the bilingual **support and privacy website** for the iOS app. [Visit the site →](https://fortranmentis.github.io/Korea-Toilet-Map/)
+Also on this GitHub: [Korea Toilet Map](https://github.com/fortranmentis/Korea-Toilet-Map), the **multilingual product, support and privacy website** for the app. [Visit the English site →](https://fortranmentis.github.io/Korea-Toilet-Map/en/)
 
 ---
 
@@ -375,7 +383,7 @@ Also on this GitHub: [Korea Toilet Map](https://github.com/fortranmentis/Korea-T
 | 📍 **[Multi-Model Grid Validator](https://github.com/fortranmentis/multi-model-grid-validator)** | 지점별로 값 점검 조건을 충족하는 최근접 모델 격자를 찾습니다. 해양·파랑·대기 **15개 설정**, **반경 40 km**를 지원합니다. 비 WRF 모델은 최초 **최대 20개 시점**의 값을 점검하고, WRF는 좌표로 매칭합니다. 모델별 병렬 처리 결과를 CSV로 통합합니다. |
 | 📊 **[Marine Forecast Index Stats](https://github.com/fortranmentis/marine-forecast-index-stats)** | Python·pandas로 생활해양예보지수의 서비스·예측 자료를 비교하고 지수 변경, 모델 요소·기상특보 차이, 특이사항 발생일과 중복 조건을 집계합니다. 권역·항로·선박별 요약 및 Excel·CSV·HTML 출력 코드를 포함하며, 관측 대비 예보 정확도를 평가하는 도구는 아닙니다. 기존 실행 환경의 호환성과 산출값 대사는 [추가 검증이 필요합니다](https://github.com/fortranmentis/marine-forecast-index-stats/blob/master/VALIDATION.md). |
 | 🧭 **[Marine Travel AI Agent · 바다결](https://github.com/fortranmentis/marine-travel-AI-agent)** | **전국 29개 예보 연계 범위**에서 1~3일 차량·도보 일정 초안을 만듭니다. 관광·해양·기상·교통 데이터를 **8개 타입 검증 Ollama 도구와 Python 일정 규칙**으로 연결합니다. 25개 육상·연륙 범위와 4개 조건부 도서 범위를 지원하며, 출처 시각·신선도 점검·경로·방문지 교체·되돌리기·PDF 출력을 제공합니다. 버스·지하철·날짜별 배편 참고 정보를 연결하되 예약·왕복 접근·특보·현장 조건은 별도 확인이 필요합니다. [검증 범위](https://github.com/fortranmentis/marine-travel-AI-agent/blob/main/VALIDATION.md)를 함께 제시합니다. |
-| 🖥️ **[GPUTERM](https://github.com/fortranmentis/GPUTERM)** | 분할 SSH·로컬 터미널, SFTP, 시스템·GPU·LLM 런타임 모니터링을 통합합니다. 이력·알림·재사용 SSH 키와 원격 환경이 지원하는 컨테이너·Kubernetes·PostgreSQL/MySQL 모니터링을 제공합니다. Rust·Tauri·React 기반 데스크톱 베타입니다. |
+| 🖥️ **[GPUTERM](https://github.com/fortranmentis/GPUTERM)** | 분할 SSH·로컬 터미널, SFTP, 시스템·GPU·LLM 런타임 모니터링을 통합합니다. 이력·알림·재사용 SSH 키와 원격 환경이 지원하는 컨테이너·Kubernetes·PostgreSQL/MySQL 모니터링을 제공합니다. Rust·Tauri·React 기반 데스크톱 베타입니다. [제품 소개](https://fortranmentis.github.io/GPUTERM/ko/)에서 모바일·외부 디스플레이 확장·Siri/단축어 기능도 확인할 수 있습니다. |
 | 🚚 **[Truck Dispatch Simulator](https://github.com/fortranmentis/truck-dispatch-simulator)** | Python/Tkinter로 공병·공차 트럭의 배차 순서·간격에 따른 공정별 시각, 상차 그룹, 트럭별·차종별 평균 소요시간을 계산합니다. 원본 요구사항·코드·엑셀 참고자료를 보존했습니다. 현재 스케줄러는 자원 중복·용량 초과가 재현되는 연구용 프로토타입이며 [운영 일정으로 검증되지 않았습니다](https://github.com/fortranmentis/truck-dispatch-simulator/blob/main/docs/VALIDATION.md). |
 
 [AIS·GPUTERM 화면 보기 ↑](#user-content-in-action) · [GPUTERM 다운로드](https://github.com/fortranmentis/GPUTERM/releases) · [전체 저장소](https://github.com/fortranmentis?tab=repositories)
@@ -397,8 +405,8 @@ Also on this GitHub: [Korea Toilet Map](https://github.com/fortranmentis/Korea-T
 
 | 프로젝트 | 구현 범위와 기술 |
 | :--- | :--- |
-| 📱 **GPUTERM iOS·Android** | SSH·SFTP, 시스템·GPU 텔레메트리, LLM 런타임 모니터링을 네이티브 모바일 환경으로 확장합니다. iOS는 **SwiftUI–UniFFI–Rust**, Android는 **Kotlin/Compose–JNI–Rust** 구조를 사용합니다. 분할 터미널·전송 큐·이력·알림·재사용 SSH 키·컨테이너/DB 모니터링과 적응형 작업 공간을 제공합니다. iOS는 SwiftTerm·Keychain, Android는 네이티브 터미널·Keystore를 사용합니다. Android는 출시 준비 단계이며 Google Play 출시를 주장하지 않습니다. [App Store에서 GPUTERM iOS 다운로드 →](https://apps.apple.com/app/gputerm/id6824499888) |
-| 🗺️ **HelpPoopy / 한국 화장실 지도** | 보행자 검색, 진행 방향을 고려한 운전자 추천, 운영시간 필터, 내비게이션 연결을 제공하는 iOS·Android 앱입니다. Python으로 준비한 **SQLCipher 기반 SQLite·R-Tree 공간 인덱스**를 활용해 지도 화면 범위 조회와 로컬 필터링을 수행합니다. 정밀 거리·진행 방향·요일별/심야 운영시간·확장 검색 규칙과 다국어 UI·기기 내 번역을 제공합니다. 번들 DB 암호화는 단순 추출을 어렵게 하지만 역공학에 대한 비밀성을 보장하지 않습니다. [App Store에서 iOS 앱 다운로드 →](https://apps.apple.com/us/app/%ED%95%9C%EA%B5%AD-%ED%99%94%EC%9E%A5%EC%8B%A4-%EC%A7%80%EB%8F%84/id6810489980) |
+| 📱 **GPUTERM iOS·Android** | SSH·SFTP, 시스템·GPU 텔레메트리, LLM 런타임 모니터링을 네이티브 모바일 환경으로 확장합니다. iOS는 **SwiftUI–UniFFI–Rust**, Android는 **Kotlin/Compose–JNI–Rust** 구조를 사용합니다. 분할 터미널·전송 큐·이력·알림·재사용 SSH 키·컨테이너/DB 모니터링과 적응형 작업 공간을 제공합니다. iOS는 SwiftTerm·Keychain, Android는 네이티브 터미널·Keystore를 사용합니다. Android는 출시 준비 단계이며 Google Play 출시를 주장하지 않습니다. [모바일 기능 소개](https://fortranmentis.github.io/GPUTERM/ko/#mobile) · [App Store에서 GPUTERM iOS 다운로드 →](https://apps.apple.com/app/gputerm/id6824499888) |
+| 🗺️ **HelpPoopy / 한국 화장실 지도** | 보행자 검색, 진행 방향을 고려한 운전자 추천, 운영시간 필터, 내비게이션 연결을 제공하는 iOS·Android 앱입니다. Python으로 준비한 **SQLCipher 기반 SQLite·R-Tree 공간 인덱스**를 활용해 지도 화면 범위 조회와 로컬 필터링을 수행합니다. 정밀 거리·진행 방향·요일별/심야 운영시간·확장 검색 규칙과 다국어 UI·기기 내 번역을 제공합니다. 번들 DB 암호화는 단순 추출을 어렵게 하지만 역공학에 대한 비밀성을 보장하지 않습니다. [6개 언어 제품 소개](https://fortranmentis.github.io/Korea-Toilet-Map/) · [App Store에서 iOS 앱 다운로드 →](https://apps.apple.com/us/app/%ED%95%9C%EA%B5%AD-%ED%99%94%EC%9E%A5%EC%8B%A4-%EC%A7%80%EB%8F%84/id6810489980) |
 
 ### 사용하는 기술
 
@@ -413,7 +421,7 @@ Also on this GitHub: [Korea Toilet Map](https://github.com/fortranmentis/Korea-T
 - **검사와 해석을 구분합니다.** 메타데이터 규격 일치, 값 조건 통과, 도메인 정확도는 서로 다른 질문입니다.
 - **운영 맥락을 문서화합니다.** 설정·의존성·검증 근거·복구 절차를 코드와 함께 관리합니다.
 
-추가 프로젝트: iOS 앱의 한·영 **지원 및 개인정보 처리방침 웹사이트**인 [Korea Toilet Map](https://github.com/fortranmentis/Korea-Toilet-Map)도 운영합니다. [사이트 방문 →](https://fortranmentis.github.io/Korea-Toilet-Map/)
+추가 프로젝트: 앱의 다국어 **제품 소개·지원·개인정보 처리방침 웹사이트**인 [Korea Toilet Map](https://github.com/fortranmentis/Korea-Toilet-Map)도 운영합니다. [사이트 방문 →](https://fortranmentis.github.io/Korea-Toilet-Map/)
 
 ---
 

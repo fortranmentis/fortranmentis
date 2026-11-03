@@ -96,7 +96,14 @@ I care about the details that make data useful: coordinate systems, temporal cov
   <img src="assets/badges/fastapi.svg" alt="FastAPI" height="36" />
 </p>
 
-**Agent orchestration & observability:** LangGraph · n8n · Langfuse · Cytoscape.js (Marine Travel AI Agent).
+**Agent Orchestration & Observability** · 에이전트 실행·관측
+
+<p>
+  <img src="assets/badges/langgraph.svg" alt="LangGraph" height="36" />
+  <img src="assets/badges/n8n.svg" alt="n8n" height="36" />
+  <img src="assets/badges/langfuse.svg" alt="Langfuse" height="36" />
+  <img src="assets/badges/cytoscape.svg" alt="Cytoscape.js" height="36" />
+</p>
 
 **Database** · 데이터베이스
 
@@ -235,6 +242,13 @@ Itineraries remain provisional. Conditional island plans require separate round-
   <img src="assets/badges/python.svg" alt="Python" height="28" />
   <img src="assets/badges/fastapi.svg" alt="FastAPI" height="28" />
   <img src="assets/badges/ollama.svg" alt="Ollama" height="28" />
+
+  <img src="assets/badges/langgraph.svg" alt="LangGraph" height="28" />
+  <img src="assets/badges/n8n.svg" alt="n8n" height="28" />
+  <img src="assets/badges/langfuse.svg" alt="Langfuse" height="28" />
+  <img src="assets/badges/cytoscape.svg" alt="Cytoscape.js" height="28" />
+  <img src="assets/badges/sqlite.svg" alt="SQLite / R-Tree" height="28" />
+  <img src="assets/badges/docker.svg" alt="Docker" height="28" />
 </p>
 
 ### 🖥️ [GPUTERM](https://github.com/fortranmentis/GPUTERM)
@@ -312,6 +326,16 @@ Native iOS and Android restroom-finding apps with pedestrian discovery, directio
 A private **SwiftUI iPhone/iPad and Apple Watch project** combining device barometers, altitude correction, WeatherKit/Open-Meteo forecasts, airport METAR observations and local climate context. Minute-level observations and movement-aware quality checks feed pressure trends and rain-likelihood estimates. Nearby pressure-flow maps, outdoor altitude profiles, widgets/Live Activities and Siri shortcuts connect analysis to daily use; SwiftData records and CSV/ZIP exports support inspection. Saved forecasts can be checked later with Brier scores, reliability plots and paired engine comparisons.
 
 **In development (source version 0.1.0).** Pressure-flow arrival estimates are heuristic and device/provider coverage varies; this is not a certified warning or medical tool. No public source or App Store release is claimed.
+
+<p>
+  <img src="assets/badges/swift.svg" alt="Swift" height="28" />
+  <img src="assets/badges/swiftui.svg" alt="SwiftUI" height="28" />
+  <img src="assets/badges/coremotion.svg" alt="CoreMotion" height="28" />
+  <img src="assets/badges/weatherkit.svg" alt="WeatherKit" height="28" />
+  <img src="assets/badges/swiftdata.svg" alt="SwiftData" height="28" />
+  <img src="assets/badges/cloudkit.svg" alt="CloudKit" height="28" />
+  <img src="assets/badges/widgetkit.svg" alt="WidgetKit" height="28" />
+</p>
 
 ### 🎓 Career seminar · Jeonbuk National University
 

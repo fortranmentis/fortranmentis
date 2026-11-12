@@ -38,13 +38,13 @@
 
 ## Hi, I'm fortranmentis 👋
 
-I am a **Data Engineer at GeoSR**, working with **marine and meteorological data**, scientific pipelines, forecast analytics and geospatial workflows.
+I am a **Data Engineer at GeoSR**, working with **marine and meteorological data**, scientific pipelines, forecast analytics, fisheries statistics and geospatial workflows.
 
 **Credentials:** Engineer Meteorology (기상기사) · Engineer Ocean Environment (해양환경기사) · Weather Forecaster License (기상예보사).
 
 I build data workflows, spatial applications, and developer tools, with a focus on **climate variability, ocean and atmospheric datasets, and geospatial analysis**. My work spans climate-data statistics, scientific file processing, analytical reporting, tool-calling AI agents, indexed location search, native mobile interfaces for data and server workflows, sensor–forecast integration, and dispatch-simulation prototypes.
 
-**Repository review · November 3, 2026:** refreshed public/private project summaries and aggregate language statistics. Implementation descriptions do not imply that every feature has shipped to app stores.
+**Repository update · November 12, 2026:** added V-PASS Spatial Analytics and the Pocket Weather Station product website, and refreshed aggregate public/private language statistics. Implementation descriptions do not imply that every feature has shipped to app stores.
 
 I care about the details that make data useful: coordinate systems, temporal coverage, missing values, explicit acceptance rules, and a clear distinction between what a result shows and what still needs validation.
 
@@ -52,7 +52,7 @@ I care about the details that make data useful: coordinate systems, temporal cov
 | :--- | :--- |
 | **Climate research** | Snow–ocean–atmosphere relationships, regression/composites, EOF analysis, and time-series methods |
 | **Data engineering** | Specification checks, NetCDF/CSV processing, raster conversion, and database/service integration |
-| **Geospatial analytics** | Numerical-model grid matching, vessel trajectories, spatial joins, and map-based visualization |
+| **Geospatial analytics** | Numerical-model grid matching, AIS/V-PASS observations, regional/grid statistics, density mapping and spatial joins |
 | **Forecast diagnostics** | Paired-product comparisons, model/warning difference summaries, and event-day reporting |
 | **AI agents** | Typed tool calling, public-data integration, rule-based itinerary drafts, and inspectable source evidence |
 | **Mobile weather sensing** | Barometer observations, altitude correction, forecast fusion, and recorded prediction verification |
@@ -86,6 +86,7 @@ I care about the details that make data useful: coordinate systems, temporal cov
   <img src="assets/badges/shapely.svg" alt="Shapely" height="36" />
   <img src="assets/badges/rasterio.svg" alt="Rasterio" height="36" />
   <img src="assets/badges/geoserver.svg" alt="GeoServer" height="36" />
+  <img src="assets/badges/qgis.svg" alt="QGIS" height="36" />
   <img src="assets/badges/matplotlib.svg" alt="Matplotlib" height="36" />
 </p>
 
@@ -182,6 +183,20 @@ Combines AIS trajectories, vessel metadata, and fairway/anchorage polygons to vi
   <img src="assets/badges/ffmpeg.svg" alt="FFmpeg" height="28" />
 </p>
 
+### 🐟 [V-PASS Spatial Analytics](https://github.com/fortranmentis/vpass-spatial-analytic)
+
+**Turn vessel observations into traceable fisheries-related spatial statistics.**
+
+Batch and spatial workflows for **2023–2025 V-PASS records**: streaming annual merges, explicit speed/vessel-ID selection, monthly and seasonal counts, regional clipping, and observation-count aggregation to existing grids. Weighted Quartic KDE, Jenks classification, **QGIS common-break styling**, and catch-grade joins connect tabular processing to maps while retaining rejection audits, assignment reports and count reconciliation.
+
+**Observation counts, unique vessels and KDE intensity are different measures.** These outputs do not independently establish fishing effort or catch productivity. The repository contains code and documentation; full reproduction requires locally supplied data, reference layers and the QGIS runtime. [Methods](https://github.com/fortranmentis/vpass-spatial-analytic/blob/main/docs/METHODOLOGY.md) · [Validation scope](https://github.com/fortranmentis/vpass-spatial-analytic/blob/main/docs/VALIDATION.md).
+
+<p>
+  <img src="assets/badges/python.svg" alt="Python" height="28" />
+  <img src="assets/badges/geopandas.svg" alt="GeoPandas" height="28" />
+  <img src="assets/badges/qgis.svg" alt="QGIS" height="28" />
+</p>
+
 <a id="climate-variability-analysis"></a>
 
 ### 🌏 [Climate Variability Analysis](https://github.com/fortranmentis/climate-variability-analysis_Jeonbuk-National-University)
@@ -235,7 +250,7 @@ Python/pandas scripts compare paired service and prediction spreadsheets, summar
 
 **Turn public coastal data into a travel draft whose inputs and decisions can be inspected.**
 
-A **v0.9 local prototype** for one- to three-day car or walking itineraries across **29 forecast-linked scopes**. Eight typed Ollama tools connect tourism, marine forecasts, weather and transport evidence to a deterministic Python planning engine. Form requests now run through **LangGraph: build → validate → traveler choice → recheck → finish**, with at most two rechecks and fixed-booking preservation. SQLite checkpoints and revisioned plans support reload/restart recovery within retention limits; **n8n** schedules data collection, while **Cytoscape and Langfuse** expose filtered execution events. Route maps, source timestamps, visit edits/undo and PDF exports keep drafts reviewable.
+**GeoSR · Internal technology development.** A **v0.9 local prototype** for one- to three-day car or walking itineraries across **29 forecast-linked scopes**. Eight typed Ollama tools connect tourism, marine forecasts, weather and transport evidence to a deterministic Python planning engine. Form requests now run through **LangGraph: build → validate → traveler choice → recheck → finish**, with at most two rechecks and fixed-booking preservation. SQLite checkpoints and revisioned plans support reload/restart recovery within retention limits; **n8n** schedules data collection, while **Cytoscape and Langfuse** expose filtered execution events. Route maps, source timestamps, visit edits/undo and PDF exports keep drafts reviewable.
 
 Itineraries remain provisional. Conditional island plans require separate round-trip access checks; operator availability, reservations, age limits, warning bulletins, and on-site access are not established by the draft. The [validation record](https://github.com/fortranmentis/marine-travel-AI-agent/blob/main/VALIDATION.md) distinguishes offline tests from live-provider observations.
 <p>
@@ -337,9 +352,11 @@ A private **SwiftUI iPhone/iPad and Apple Watch project** combining device barom
   <img src="assets/badges/widgetkit.svg" alt="WidgetKit" height="28" />
 </p>
 
+[Explore Pocket Weather Station →](https://fortranmentis.github.io/pocket_weather_station_hp/) · [한국어 소개 →](https://fortranmentis.github.io/pocket_weather_station_hp/ko/)
+
 ### 🎓 Career seminar · Jeonbuk National University
 
-[**After Earth and Environmental Sciences: Working as a Data Engineer**](https://fortranmentis.github.io/Jeonbuk-National-University-Employment-Seminar/) — a 50-minute talk plus 10-minute Q&A, with 39 web slides connecting ocean-data pipelines, AIS analysis, AI-assisted project work and practical career preparation. [Source repository](https://github.com/fortranmentis/Jeonbuk-National-University-Employment-Seminar).
+[**After Earth and Environmental Sciences: Working as a Data Engineer**](https://fortranmentis.github.io/Jeonbuk-National-University-Employment-Seminar/) — a 50-minute talk plus 10-minute Q&A, with 40 web slides connecting ocean-data pipelines, AIS analysis, AI-assisted project work and practical career preparation. [Source repository](https://github.com/fortranmentis/Jeonbuk-National-University-Employment-Seminar).
 
 <a id="in-action"></a>
 
@@ -393,7 +410,7 @@ Also on this GitHub: [Korea Toilet Map](https://github.com/fortranmentis/Korea-T
 
 ## 안녕하세요, fortranmentis입니다 👋
 
-저는 **GeoSR(지오시스템리서치)의 Data Engineer**로, **해양·기상 데이터**를 다룹니다. 과학 데이터 처리, 예보 분석과 공간정보 워크플로를 현업 서비스로 연결합니다.
+저는 **GeoSR(지오시스템리서치)의 Data Engineer**로, **해양·기상 데이터**를 다룹니다. 과학 데이터 처리, 예보 분석, 수산 분야 통계와 공간정보 워크플로를 현업 서비스로 연결합니다.
 
 **자격·면허:** 기상기사 · 해양환경기사 · 기상예보사 면허.
 
@@ -401,7 +418,7 @@ Also on this GitHub: [Korea Toilet Map](https://github.com/fortranmentis/Korea-T
 
 **기후 변동성, 해양·대기 데이터, 공간정보 분석**을 중심으로 데이터 워크플로, 위치 기반 앱, 개발 도구를 만듭니다. 기후자료 통계, 과학 데이터 처리와 분석 보고서, 도구 호출 기반 AI 에이전트부터 공간 인덱스를 활용한 위치 검색, 데이터·서버 작업을 위한 네이티브 모바일 UI, 센서·예보 정보 결합과 배차 시뮬레이션까지 연결합니다.
 
-**저장소 검토 기준일: 2026년 11월 3일.** 공개·비공개 프로젝트 소개와 합산 언어 통계를 갱신했습니다. 구현된 기능과 앱스토어 배포 상태는 구분합니다.
+**저장소 갱신일: 2026년 11월 12일.** V-PASS Spatial Analytics와 Pocket Weather Station 제품 안내 링크를 추가하고 공개·비공개 합산 언어 통계를 갱신했습니다. 구현된 기능과 앱스토어 배포 상태는 구분합니다.
 
 좌표계, 시간 범위, 결측값, 명시적인 통과 조건처럼 데이터 활용의 신뢰도를 좌우하는 세부사항을 중요하게 생각합니다. 결과가 보여주는 내용과 추가 검증이 필요한 범위를 구분해 설명하는 것을 지향합니다.
 
@@ -409,7 +426,7 @@ Also on this GitHub: [Korea Toilet Map](https://github.com/fortranmentis/Korea-T
 | :--- | :--- |
 | **기후 연구** | 강설·해양·대기 관계, 회귀·합성 분석, EOF 공간 모드, 시계열 분석 |
 | **데이터 엔지니어링** | 규격 검증, NetCDF·CSV 처리, 래스터 변환, 데이터베이스·공간 서비스 연계 |
-| **공간 데이터 분석** | 수치모델 격자 매칭, 선박 궤적 분석, 공간 조인, 지도 기반 시각화 |
+| **공간 데이터 분석** | 수치모델 격자 매칭, AIS·V-PASS 자료, 권역·격자 통계, 밀도 지도와 공간 조인 |
 | **모바일 기상 관측** | 기압계 관측·고도 보정·예보 결합·저장한 예측의 사후 검증 |
 | **예보 변경 분석** | 서비스·예측 자료 비교, 모델 요소·특보 차이 요약, 특이사항 발생일 보고 |
 | **AI 에이전트** | 타입이 정의된 도구 호출, 공공데이터 연계, 규칙 기반 일정 초안, 출처·판정 근거 확인 |
@@ -423,10 +440,11 @@ Also on this GitHub: [Korea Toilet Map](https://github.com/fortranmentis/Korea-T
 | :--- | :--- |
 | 🌊 **[Ocean Forecast GeoPipeline](https://github.com/fortranmentis/ocean-forecast-geopipeline)** | 반복적으로 제공되는 해양·해빙 산출물을 공간 서비스로 연결합니다. NetCDF·CSV 규격 비교, 재격자화·재투영, U/V 기반 유속·방향 산출, PostgreSQL 갱신, 지정된 GeoServer 레이어 발행을 수행하며 항목별 판정 근거를 보고서에 남깁니다. |
 | 🚢 **[Busan AIS Ship Behavior Analysis](https://github.com/fortranmentis/Busan-AIS-ship-behavior-analysis)** | AIS 궤적·선박 메타데이터·항로 및 정박지 폴리곤을 결합해 정지 상태, 항로 이탈, 활동 후보를 지도 타임랩스로 보여줍니다. 공간 전처리와 병렬 렌더링을 활용하며, **활동 표시는 독립적인 확인이 필요한 규칙 기반 후보**입니다. [2024 학회 포스터·2025.01.14 워크숍 발표](https://github.com/fortranmentis/Busan-AIS-ship-behavior-analysis#research-presentations)의 방법·예시와 공개 코드의 설정 차이를 함께 설명합니다. |
+| 🐟 **[V-PASS Spatial Analytics](https://github.com/fortranmentis/vpass-spatial-analytic)** | **2023–2025년 V-PASS**의 스트리밍 병합, 명시적인 속력·선박 ID 필터, 월·계절·권역별 집계와 격자 합산을 연결합니다. 가중 Quartic KDE·Jenks 분류·QGIS 공통 구간 표현·어획 등급 결합을 수행하며 제외 자료·격자 배정·집계량 대사 기록을 남깁니다. **관측 횟수·고유 선박 수·KDE 강도는 서로 다른 지표**이며 조업량·어획 생산성으로 단정하지 않습니다. 코드·문서만 공개하며 원자료·공간 기준자료·QGIS 환경은 별도입니다. [방법](https://github.com/fortranmentis/vpass-spatial-analytic/blob/main/docs/METHODOLOGY.md) · [검증 범위](https://github.com/fortranmentis/vpass-spatial-analytic/blob/main/docs/VALIDATION.md) |
 | 🌏 **[Climate Variability Analysis](https://github.com/fortranmentis/climate-variability-analysis_Jeonbuk-National-University)** | 전주 강설·적설과 해수면 온도·대기 순환·해빙의 통계적 관계를 다루는 전북대학교 관련 연구·수업 자료 아카이브입니다. Fortran·GrADS·MATLAB으로 회귀·합성·EOF·필터링·스펙트럼 분석을 다룹니다. **2021년 공동 졸업논문**의 1983–2021년 전주 관측·NOAA 재분석, 시차 회귀·LBM 비교 및 [논문·발표자료·그림](https://github.com/fortranmentis/climate-variability-analysis_Jeonbuk-National-University#thesis)을 함께 소개합니다. 단일 회귀 예제의 실행 기록은 있으나 전체 분석과 그림·과학적 결론의 재현은 [추가 검증이 필요합니다](https://github.com/fortranmentis/climate-variability-analysis_Jeonbuk-National-University/blob/main/VALIDATION.md). |
 | 📍 **[Multi-Model Grid Validator](https://github.com/fortranmentis/multi-model-grid-validator)** | 지점별로 값 점검 조건을 충족하는 최근접 모델 격자를 찾습니다. 해양·파랑·대기 **15개 설정**, **반경 40 km**를 지원합니다. 비 WRF 모델은 최초 **최대 20개 시점**의 값을 점검하고, WRF는 좌표로 매칭합니다. 모델별 병렬 처리 결과를 CSV로 통합합니다. |
 | 📊 **[Marine Forecast Index Stats](https://github.com/fortranmentis/marine-forecast-index-stats)** | Python·pandas로 생활해양예보지수의 서비스·예측 자료를 비교하고 지수 변경, 모델 요소·기상특보 차이, 특이사항 발생일과 중복 조건을 집계합니다. 권역·항로·선박별 요약 및 Excel·CSV·HTML 출력 코드를 포함하며, 관측 대비 예보 정확도를 평가하는 도구는 아닙니다. 기존 실행 환경의 호환성과 산출값 대사는 [추가 검증이 필요합니다](https://github.com/fortranmentis/marine-forecast-index-stats/blob/master/VALIDATION.md). |
-| 🧭 **[Marine Travel AI Agent · 바다결](https://github.com/fortranmentis/marine-travel-AI-agent)** | **v0.9 로컬 프로토타입**. 29개 예보 연계 범위의 1–3일 여행 초안을 구성합니다. 8개 typed Ollama 도구와 Python 규칙 엔진에 **LangGraph의 생성 → 검증 → 사용자 선택 → 재검토 → 완료** 흐름을 연결했습니다. 최대 2회 재검토·고정 예약 유지, SQLite 체크포인트·버전별 계획 복구, n8n 자료 수집, Cytoscape·Langfuse 실행 추적, 지도·출처·수정/되돌리기·PDF 출력을 제공합니다. 예약·왕복 접근·현장 조건은 별도 확인이 필요한 초안입니다. [검증 범위](https://github.com/fortranmentis/marine-travel-AI-agent/blob/main/VALIDATION.md) |
+| 🧭 **[Marine Travel AI Agent · 바다결](https://github.com/fortranmentis/marine-travel-AI-agent)** | **GeoSR 사내 기술개발 · v0.9 로컬 프로토타입**. 29개 예보 연계 범위의 1–3일 여행 초안을 구성합니다. 8개 typed Ollama 도구와 Python 규칙 엔진에 **LangGraph의 생성 → 검증 → 사용자 선택 → 재검토 → 완료** 흐름을 연결했습니다. 최대 2회 재검토·고정 예약 유지, SQLite 체크포인트·버전별 계획 복구, n8n 자료 수집, Cytoscape·Langfuse 실행 추적, 지도·출처·수정/되돌리기·PDF 출력을 제공합니다. 예약·왕복 접근·현장 조건은 별도 확인이 필요한 초안입니다. [검증 범위](https://github.com/fortranmentis/marine-travel-AI-agent/blob/main/VALIDATION.md) |
 | 🖥️ **[GPUTERM](https://github.com/fortranmentis/GPUTERM)** | 분할 SSH·로컬 터미널, SFTP, 시스템·GPU·LLM 런타임 모니터링을 통합합니다. 이력·알림·재사용 SSH 키와 원격 환경이 지원하는 컨테이너·Kubernetes·PostgreSQL/MySQL 모니터링을 제공합니다. Rust·Tauri·React 기반 데스크톱 베타입니다. [제품 소개](https://fortranmentis.github.io/GPUTERM/ko/)에서 모바일·외부 디스플레이 확장·Siri/단축어 기능도 확인할 수 있습니다.  TensorBoard·Jupyter·MLflow·Ray 등 원격 웹서비스 탐지·임시 SSH 포워딩을 추가했으며, 읽기 전용 MCP 조회에서는 로그인 토큰과 자격증명이 포함될 수 있는 MLflow URI를 제외합니다. |
 | 🚚 **[Truck Dispatch Simulator](https://github.com/fortranmentis/truck-dispatch-simulator)** | Python/Tkinter로 공병·공차 트럭의 배차 순서·간격에 따른 공정별 시각, 상차 그룹, 트럭별·차종별 평균 소요시간을 계산합니다. 원본 요구사항·코드·엑셀 참고자료를 보존했습니다. 현재 스케줄러는 자원 중복·용량 초과가 재현되는 연구용 프로토타입이며 [운영 일정으로 검증되지 않았습니다](https://github.com/fortranmentis/truck-dispatch-simulator/blob/main/docs/VALIDATION.md). |
 
@@ -456,9 +474,11 @@ Also on this GitHub: [Korea Toilet Map](https://github.com/fortranmentis/Korea-T
 
 기기 기압계·고도 보정과 WeatherKit/Open-Meteo 예보, 공항 METAR 관측, 지역 기후 정보를 연결하는 **SwiftUI 기반 iPhone·iPad·Apple Watch 앱**입니다. 분 단위 관측과 이동 상태별 품질 점검, 기압 추세·강수 가능성, 주변 기압 변화 이동 지도, 야외 고도 프로필, 위젯·Live Activities·Siri 단축어를 구현합니다. SwiftData 기록과 CSV/ZIP 내보내기, 저장한 예측의 Brier 점수·신뢰도·엔진 비교로 결과를 검토합니다. **소스 버전 0.1.0의 개발 프로젝트**이며, 기압 이동·도착 추정은 휴리스틱입니다. 공인 특보·의료 판단 도구 또는 App Store 출시로 소개하지 않습니다.
 
+[기상대 제품 안내 →](https://fortranmentis.github.io/pocket_weather_station_hp/ko/) · [English →](https://fortranmentis.github.io/pocket_weather_station_hp/)
+
 ### 취업·진로 세미나
 
-[**지구환경과학과 졸업 후, 데이터 엔지니어로 일하기**](https://fortranmentis.github.io/Jeonbuk-National-University-Employment-Seminar/) — 해양 데이터 파이프라인·AIS·AI 활용·프로젝트 운영·취업 준비를 연결한 **39개 웹 슬라이드, 발표 50분 + Q&A 10분** 구성입니다. [발표 저장소](https://github.com/fortranmentis/Jeonbuk-National-University-Employment-Seminar).
+[**지구환경과학과 졸업 후, 데이터 엔지니어로 일하기**](https://fortranmentis.github.io/Jeonbuk-National-University-Employment-Seminar/) — 해양 데이터 파이프라인·AIS·AI 활용·프로젝트 운영·취업 준비를 연결한 **40개 웹 슬라이드, 발표 50분 + Q&A 10분** 구성입니다. [발표 저장소](https://github.com/fortranmentis/Jeonbuk-National-University-Employment-Seminar).
 
 ### 사용하는 기술
 
